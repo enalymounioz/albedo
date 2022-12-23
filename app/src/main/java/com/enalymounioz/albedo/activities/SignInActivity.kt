@@ -42,7 +42,7 @@ class SignInActivity : BaseActivity() {
 
     fun signInSuccess(user: User) {
         hideProgressDialog()
-        startActivity(Intent (this, MainActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 
@@ -50,7 +50,7 @@ class SignInActivity : BaseActivity() {
         setSupportActionBar(toolbar_sign_in_activity)
 
         val actionBar = supportActionBar
-        if(actionBar!=null) {
+        if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true)
             actionBar.setHomeAsUpIndicator(R.drawable.ic_black_color_back_24dp)
         }
@@ -60,11 +60,11 @@ class SignInActivity : BaseActivity() {
         }
     }
 
-    private fun signInRegisteredUser(){
+    private fun signInRegisteredUser() {
         val email: String = et_email_sign_in.text.toString().trim { it <= ' ' }
         val password: String = et_password_sign_in.text.toString().trim { it <= ' ' }
 
-        if (validateForm(email, password)){
+        if (validateForm(email, password)) {
             showProgressDialog(resources.getString(R.string.please_wait))
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -73,12 +73,14 @@ class SignInActivity : BaseActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("Sign in", "signInWithEmail:success")
                         val user = auth.currentUser
-                        startActivity(Intent(this, MainActivity::class.java), )
+                        startActivity(Intent(this, MainActivity::class.java))
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w("Sign in", "signInWithEmail:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            baseContext, "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
         }

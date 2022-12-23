@@ -15,14 +15,10 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : BaseActivity() {
 
-    /**
-     * This function is auto created by Android when the Activity Class is created.
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        // This is used to hide the status bar and make the splash screen as a full screen activity.
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
@@ -34,9 +30,7 @@ class SignUpActivity : BaseActivity() {
         }
 
         setupActionBar()
-
     }
-
 
     private fun setupActionBar() {
         setSupportActionBar(toolbar_sign_up_activity)
@@ -53,8 +47,8 @@ class SignUpActivity : BaseActivity() {
         btn_sign_up.setOnClickListener {
             registerUser()
         }
-
     }
+
     fun userRegisteredSuccess() {
         Toast.makeText(
             this, "you have successfully registered",
@@ -64,6 +58,7 @@ class SignUpActivity : BaseActivity() {
         FirebaseAuth.getInstance().signOut()
         finish()
     }
+
     private fun registerUser() {
         val name: String = et_name.text.toString().trim { it <= ' ' }
         val email: String = et_email.text.toString().trim { it <= ' ' }
