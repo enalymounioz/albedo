@@ -9,4 +9,18 @@
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <!--END-->
+
+    <!--TODO (Step 6: Add all the string values here.)-->
+    <!--START-->
+    <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="please_wait">Please wait</string>
+    <string name="pleace_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="now_we_can_register_user">Now we can register a new user</string>
+    <!--END-->
+
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_sign_out">Sign Out</string>
 </resources>

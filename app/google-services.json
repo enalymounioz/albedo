@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686691612168",
+    "project_id": "albedo-c73d6",
+    "storage_bucket": "albedo-c73d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686691612168:android:3e3e680bf8dd4137c503bd",
+        "android_client_info": {
+          "package_name": "com.enalymounioz.albedo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBANXaXT64mCns-Ixu4kkHkO9ioyMwB-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

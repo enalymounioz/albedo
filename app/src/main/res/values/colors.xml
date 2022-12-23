@@ -13,7 +13,9 @@
     <color name="colorAccent">#9395D3</color>
 
     <color name="primary_text_color">#000807</color>
-    <color name="secondary_text_color">#FBF9FF</color>
+    <color name="secondary_text_color">#FF000000</color>
+
+    <color name="snackbar_error_color">#F72400</color>
 
 
 </resources>
