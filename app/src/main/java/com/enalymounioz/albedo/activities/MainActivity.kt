@@ -6,14 +6,17 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.WindowInsets
 import android.view.WindowManager
-import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.bumptech.glide.Glide
 import com.enalymounioz.albedo.R
+import com.enalymounioz.albedo.firebase.FirestoreClass
+import com.enalymounioz.albedo.models.User
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_sign_in.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.nav_header_main.*
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -21,8 +24,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        @Suppress("DEPRECATION")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        @Suppress("DEPRECATION") if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
         } else {
             window.setFlags(
@@ -31,7 +33,20 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             )
             setupActionBar()
             nav_view.setNavigationItemSelectedListener(this)
+            FirestoreClass().loadUserData(this)
         }
+
+    }
+
+    fun updateNavigationUserDetails(user: User){
+        Glide
+            .with(this)
+            .load(user.image)
+            .centerCrop()
+            .placeholder(R.drawable.ic_user_place_holder)
+            .into(iv_profile_user_image)
+
+        tv_username.text = user.name
 
     }
 
@@ -47,10 +62,9 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
         when (menuItem.itemId) {
             R.id.nav_my_profile -> {
+                startActivity(Intent(this, MyProfileActivity::class.java))
 
-                Toast.makeText(this@MainActivity, "My Profile", Toast.LENGTH_SHORT).show()
             }
-
             R.id.nav_sign_out -> {
                 // Here sign outs the user from firebase in this device.
                 FirebaseAuth.getInstance().signOut()
@@ -63,7 +77,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             }
         }
         drawer_layout.closeDrawer(GravityCompat.START)
-        // END
         return true
     }
 
@@ -75,7 +88,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         toolbar_main_activity.setNavigationOnClickListener {
             toggleDrawer()
         }
-        // END
     }
 
     private fun toggleDrawer() {

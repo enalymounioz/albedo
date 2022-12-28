@@ -1,20 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\2dbc367b9043792d39c48a69483c752f\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\evoreopoulou\.gradle\caches\transforms-3\886a19b0e464162703df04a163d5541b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\e317bdafd26feecacd40217ec6bc9da5\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f2d0d7f972c1252ab98c765bf9fee9d1\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a9c32c98b827839c305edcfde5e0a86a\transformed\glide-4.14.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\c6174e7d4756bd4c5fcaa5e89f4a1199\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\88086d765656368f7870f3cfcf3c2912\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\36b26d51002b214e1feac0cce914ee6f\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\3a40705b942a39616407a3f72b1ab346\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\9d3443eec617a74f0bb415ceaadf0fba\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\91b1a835626dfc64cbdfc3167a9c406f\transformed\firebase-common-20.2.0\AndroidManifest.xml:15:1-39:12
@@ -51,9 +54,11 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\evoreopoulou\.
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\5cdc50d1350230e8d12a4c64d6ecd3ca\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\e3dd6c1f28960ac243b88dc2f2e092b4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\8d382115b0788015bb0f8e943b356593\transformed\firebase-components-17.0.1\AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\98ebf3a2e027540d88eb20ebadfa9838\transformed\gifdecoder-4.14.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\evoreopoulou\.gradle\caches\transforms-3\917bab4c8230627f742a415c493bf71a\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31102e560e259be8658cb41f9589fc46\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\72ac854ef69e6b98a1e37e0266a3ad48\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d619be846578bcaceaa34c19d94282df\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a4dbc0b3486165dfe92f36c5046b5df7\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f75a7c434e7c032cf37fbe922009668e\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
@@ -64,29 +69,57 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\evoreop
 MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f8f7d2b776684fe60430be7ebdb2a0ca\transformed\relinker-1.4.1\AndroidManifest.xml:2:1-7:12
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d13604fb4742d9b6e1fa4c7cbb3bcb73\transformed\grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\caea1736323c18aa30ec61ec53ad925b\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
 	package
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-65:12
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d13604fb4742d9b6e1fa4c7cbb3bcb73\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d13604fb4742d9b6e1fa4c7cbb3bcb73\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:5:5-63:19
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:9:5-72:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\2dbc367b9043792d39c48a69483c752f\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
@@ -95,10 +128,14 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\evoreopo
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\evoreopoulou\.gradle\caches\transforms-3\886a19b0e464162703df04a163d5541b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a9c32c98b827839c305edcfde5e0a86a\transformed\glide-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a9c32c98b827839c305edcfde5e0a86a\transformed\glide-4.14.2\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\36b26d51002b214e1feac0cce914ee6f\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\36b26d51002b214e1feac0cce914ee6f\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\3a40705b942a39616407a3f72b1ab346\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\3a40705b942a39616407a3f72b1ab346\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\9d3443eec617a74f0bb415ceaadf0fba\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
@@ -119,118 +156,132 @@ MERGED from [androidx.core:core:1.8.0] C:\Users\evoreopoulou\.gradle\caches\tran
 MERGED from [androidx.core:core:1.8.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a84ea4f0cd19dbb745b8f3c734753675\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31f6ee8882f6fe4fc5dde2a3ddb98b2a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31f6ee8882f6fe4fc5dde2a3ddb98b2a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\98ebf3a2e027540d88eb20ebadfa9838\transformed\gifdecoder-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\98ebf3a2e027540d88eb20ebadfa9838\transformed\gifdecoder-4.14.2\AndroidManifest.xml:9:5-20
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31102e560e259be8658cb41f9589fc46\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31102e560e259be8658cb41f9589fc46\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a84ea4f0cd19dbb745b8f3c734753675\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:13:9-44
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:17:9-44
 	android:dataExtractionRules
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.enalymounioz.albedo.activities.BaseActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:19:9-27:20
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:18:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:22:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:21:13-37
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:19:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:23:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:16:13-52
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:20:13-52
 meta-data#android.app.lib_name
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:20:13-22:36
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:24:13-26:36
 	android:value
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:22:17-33
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:26:17-33
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:21:17-52
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:25:17-52
+activity#com.enalymounioz.albedo.activities.MyProfileActivity
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:28:9-32:63
+	android:screenOrientation
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:31:13-49
+	android:exported
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:32:13-60
+	android:name
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:29:13-57
 activity#com.enalymounioz.albedo.activities.SignInActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:24:9-28:63
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:33:9-37:63
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:27:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:36:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:35:13-37
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:28:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:37:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:25:13-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:34:13-54
 activity#com.enalymounioz.albedo.activities.SignUpActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:29:9-33:63
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:38:9-42:63
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:41:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:40:13-37
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:33:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:42:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:30:13-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:39:13-54
 activity#com.enalymounioz.albedo.activities.IntroActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:34:9-38:63
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:43:9-47:63
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:37:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:46:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:45:13-37
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:38:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:47:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:35:13-53
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:44:13-53
 activity#com.enalymounioz.albedo.activities.SplashActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:39:9-49:20
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:48:9-58:20
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:51:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:50:13-36
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:43:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:52:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:40:13-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:49:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:44:13-48:29
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:53:13-57:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:54:17-69
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:54:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:47:17-77
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:56:17-77
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:47:27-74
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:56:27-74
 activity#com.enalymounioz.albedo.activities.MainActivity
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:50:9-58:20
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:59:9-67:20
 	android:screenOrientation
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:62:13-49
 	android:exported
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:61:13-37
 	android:theme
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:54:13-60
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:63:13-60
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:51:13-52
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:60:13-52
 meta-data#preloaded_fonts
-ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:60:9-62:57
+ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:69:9-71:57
 	android:resource
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:62:13-54
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:71:13-54
 	android:name
-		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:61:13-43
+		ADDED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:70:13-43
 uses-sdk
 INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\2dbc367b9043792d39c48a69483c752f\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
@@ -243,6 +294,8 @@ MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\evoreopoulou\.gradle\c
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f2d0d7f972c1252ab98c765bf9fee9d1\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a9c32c98b827839c305edcfde5e0a86a\transformed\glide-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a9c32c98b827839c305edcfde5e0a86a\transformed\glide-4.14.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\c6174e7d4756bd4c5fcaa5e89f4a1199\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\c6174e7d4756bd4c5fcaa5e89f4a1199\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\88086d765656368f7870f3cfcf3c2912\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
@@ -251,6 +304,8 @@ MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\evo
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\36b26d51002b214e1feac0cce914ee6f\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\3a40705b942a39616407a3f72b1ab346\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\3a40705b942a39616407a3f72b1ab346\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\9d3443eec617a74f0bb415ceaadf0fba\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
@@ -323,12 +378,16 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\e3dd6c1f28960ac243b88dc2f2e092b4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\8d382115b0788015bb0f8e943b356593\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\8d382115b0788015bb0f8e943b356593\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\98ebf3a2e027540d88eb20ebadfa9838\transformed\gifdecoder-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\98ebf3a2e027540d88eb20ebadfa9838\transformed\gifdecoder-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\evoreopoulou\.gradle\caches\transforms-3\917bab4c8230627f742a415c493bf71a\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\evoreopoulou\.gradle\caches\transforms-3\917bab4c8230627f742a415c493bf71a\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31102e560e259be8658cb41f9589fc46\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\31102e560e259be8658cb41f9589fc46\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\72ac854ef69e6b98a1e37e0266a3ad48\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\72ac854ef69e6b98a1e37e0266a3ad48\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\16707e4e7cd81220068013237649a15a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d619be846578bcaceaa34c19d94282df\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d619be846578bcaceaa34c19d94282df\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\a4dbc0b3486165dfe92f36c5046b5df7\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
@@ -361,12 +420,16 @@ INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\An
 		INJECTED from C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\91b1a835626dfc64cbdfc3167a9c406f\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\91b1a835626dfc64cbdfc3167a9c406f\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -383,26 +446,18 @@ ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopo
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\15908fb7788c4f1697971e0f65212b1c\transformed\firebase-firestore-ktx-24.4.1\AndroidManifest.xml:15:17-126
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\be5cf8479faff9761efcab54546aad52\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:15:17-122
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
 	android:value
 		ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\203fa68106ae0e3aa901a32e677be17a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
-MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d13604fb4742d9b6e1fa4c7cbb3bcb73\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\evoreopoulou\.gradle\caches\transforms-3\d13604fb4742d9b6e1fa4c7cbb3bcb73\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
@@ -463,6 +518,12 @@ ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou
 		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\7b04e31c9baa3e217150b34f7d31ebfa\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\f7938e7b8740f0812ca14029478d6761\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\evoreopoulou\.gradle\caches\transforms-3\91b1a835626dfc64cbdfc3167a9c406f\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
 	android:authorities

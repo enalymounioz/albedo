@@ -2506,6 +2506,14 @@ int dimen mtrl_tooltip_minHeight 0x7f07026c
 int dimen mtrl_tooltip_minWidth 0x7f07026d
 int dimen mtrl_tooltip_padding 0x7f07026e
 int dimen mtrl_transition_shared_axis_slide_distance 0x7f07026f
+int dimen my_profile_btn_update_marginTop 0x7f070295
+int dimen my_profile_et_email_marginTop 0x7f070296
+int dimen my_profile_et_mobile_marginTop 0x7f070297
+int dimen my_profile_name_til_marginTop 0x7f070298
+int dimen my_profile_screen_content_marginStartEnd 0x7f070299
+int dimen my_profile_screen_content_marginTopBottom 0x7f07029a
+int dimen my_profile_screen_content_padding 0x7f07029b
+int dimen my_profile_user_image_size 0x7f07029c
 int dimen nav_content_margin_StartEnd 0x7f070270
 int dimen nav_content_margin_bottom 0x7f070271
 int dimen nav_content_margin_top 0x7f070272
@@ -2659,6 +2667,7 @@ int drawable design_snackbar_background 0x7f080093
 int drawable googleg_disabled_color_18 0x7f080094
 int drawable googleg_standard_color_18 0x7f080095
 int drawable ic_action_navigation_menu 0x7f080096
+int drawable ic_background 0x7f0800f2
 int drawable ic_black_color_back_24dp 0x7f080097
 int drawable ic_clock_black_24dp 0x7f080098
 int drawable ic_keyboard_black_24dp 0x7f080099
@@ -2674,6 +2683,7 @@ int drawable ic_mtrl_chip_close_circle 0x7f0800a2
 int drawable ic_nav_sign_out 0x7f0800a3
 int drawable ic_nav_user 0x7f0800a4
 int drawable ic_user_place_holder 0x7f0800a5
+int drawable ic_white_color_back_24dp 0x7f0800f3
 int drawable intro_background 0x7f0800a6
 int drawable m3_appbar_background 0x7f0800a7
 int drawable m3_popupmenu_background_overlay 0x7f0800a8
@@ -2860,6 +2870,7 @@ int id btn_sign_in 0x7f0a0069
 int id btn_sign_in_intro 0x7f0a006a
 int id btn_sign_up 0x7f0a006b
 int id btn_sign_up_intro 0x7f0a006c
+int id btn_update 0x7f0a0200
 int id buttonPanel 0x7f0a006d
 int id cache_measures 0x7f0a006e
 int id callMeasure 0x7f0a006f
@@ -2943,6 +2954,7 @@ int id enterAlways 0x7f0a00bc
 int id enterAlwaysCollapsed 0x7f0a00bd
 int id et_email 0x7f0a00be
 int id et_email_sign_in 0x7f0a00bf
+int id et_mobile 0x7f0a0201
 int id et_name 0x7f0a00c0
 int id et_password 0x7f0a00c1
 int id et_password_sign_in 0x7f0a00c2
@@ -2968,6 +2980,7 @@ int id frost 0x7f0a00d5
 int id fullscreen_header 0x7f0a00d6
 int id ghost_view 0x7f0a00d7
 int id ghost_view_holder 0x7f0a00d8
+int id glide_custom_view_target_tag 0x7f0a01ff
 int id gone 0x7f0a00d9
 int id graph 0x7f0a00da
 int id graph_wrap 0x7f0a00db
@@ -2996,7 +3009,7 @@ int id invisible 0x7f0a00f1
 int id inward 0x7f0a00f2
 int id italic 0x7f0a00f3
 int id item_touch_helper_previous_elevation 0x7f0a00f4
-int id iv_user_image 0x7f0a00f5
+int id iv_profile_user_image 0x7f0a0203
 int id jumpToEnd 0x7f0a00f6
 int id jumpToStart 0x7f0a00f7
 int id labeled 0x7f0a00f8
@@ -3219,6 +3232,7 @@ int id titleDividerNoCustom 0x7f0a01d0
 int id title_template 0x7f0a01d1
 int id toggle 0x7f0a01d2
 int id toolbar_main_activity 0x7f0a01d3
+int id toolbar_my_profile_activity 0x7f0a0202
 int id toolbar_sign_in_activity 0x7f0a01d4
 int id toolbar_sign_up_activity 0x7f0a01d5
 int id top 0x7f0a01d6
@@ -3388,6 +3402,7 @@ int layout abc_tooltip 0x7f0d001b
 int layout activity_base 0x7f0d001c
 int layout activity_intro 0x7f0d001d
 int layout activity_main 0x7f0d001e
+int layout activity_my_profile 0x7f0d0073
 int layout activity_sign_in 0x7f0d001f
 int layout activity_sign_up 0x7f0d0020
 int layout activity_splash 0x7f0d0021
@@ -3588,6 +3603,7 @@ int string material_timepicker_minute 0x7f13006b
 int string material_timepicker_pm 0x7f13006c
 int string material_timepicker_select_time 0x7f13006d
 int string material_timepicker_text_input_mode_description 0x7f13006e
+int string mobile 0x7f1300b9
 int string mtrl_badge_numberless_content_description 0x7f13006f
 int string mtrl_checkbox_button_icon_path_checked 0x7f130070
 int string mtrl_checkbox_button_icon_path_group_name 0x7f130071
@@ -3644,6 +3660,8 @@ int string mtrl_switch_track_decoration_path 0x7f1300a3
 int string mtrl_switch_track_path 0x7f1300a4
 int string mtrl_timepicker_cancel 0x7f1300a5
 int string mtrl_timepicker_confirm 0x7f1300a6
+int string my_profile 0x7f1300bc
+int string my_profile_title 0x7f1300bb
 int string name 0x7f1300a7
 int string nav_my_profile 0x7f1300a8
 int string nav_sign_out 0x7f1300a9
@@ -3662,6 +3680,7 @@ int string sign_in 0x7f1300b5
 int string sign_up 0x7f1300b6
 int string sign_up_description_text 0x7f1300b7
 int string status_bar_notification_info_overflow 0x7f1300b8
+int string update 0x7f1300ba
 int style AlertDialog_AppCompat 0x7f140000
 int style AlertDialog_AppCompat_Light 0x7f140001
 int style Animation_AppCompat_Dialog 0x7f140002

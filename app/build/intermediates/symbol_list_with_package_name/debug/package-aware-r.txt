@@ -2507,6 +2507,14 @@ dimen mtrl_tooltip_minHeight
 dimen mtrl_tooltip_minWidth
 dimen mtrl_tooltip_padding
 dimen mtrl_transition_shared_axis_slide_distance
+dimen my_profile_btn_update_marginTop
+dimen my_profile_et_email_marginTop
+dimen my_profile_et_mobile_marginTop
+dimen my_profile_name_til_marginTop
+dimen my_profile_screen_content_marginStartEnd
+dimen my_profile_screen_content_marginTopBottom
+dimen my_profile_screen_content_padding
+dimen my_profile_user_image_size
 dimen nav_content_margin_StartEnd
 dimen nav_content_margin_bottom
 dimen nav_content_margin_top
@@ -2660,6 +2668,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_action_navigation_menu
+drawable ic_background
 drawable ic_black_color_back_24dp
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2675,6 +2684,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_nav_sign_out
 drawable ic_nav_user
 drawable ic_user_place_holder
+drawable ic_white_color_back_24dp
 drawable intro_background
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2861,6 +2871,7 @@ id btn_sign_in
 id btn_sign_in_intro
 id btn_sign_up
 id btn_sign_up_intro
+id btn_update
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2944,6 +2955,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id et_email
 id et_email_sign_in
+id et_mobile
 id et_name
 id et_password
 id et_password_sign_in
@@ -2969,6 +2981,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2997,7 +3010,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id iv_user_image
+id iv_profile_user_image
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3220,6 +3233,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar_main_activity
+id toolbar_my_profile_activity
 id toolbar_sign_in_activity
 id toolbar_sign_up_activity
 id top
@@ -3389,6 +3403,7 @@ layout abc_tooltip
 layout activity_base
 layout activity_intro
 layout activity_main
+layout activity_my_profile
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
@@ -3589,6 +3604,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string mobile
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -3645,6 +3661,8 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string my_profile
+string my_profile_title
 string name
 string nav_my_profile
 string nav_sign_out
@@ -3663,6 +3681,7 @@ string sign_in
 string sign_up
 string sign_up_description_text
 string status_bar_notification_info_overflow
+string update
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -56,6 +56,14 @@
     <dimen name="intro_text_size">16sp</dimen>
     <dimen name="lets_get_started_text_marginTop">25dp</dimen>
     <dimen name="lets_get_started_text_size">25sp</dimen>
+    <dimen name="my_profile_btn_update_marginTop">30dp</dimen>
+    <dimen name="my_profile_et_email_marginTop">20dp</dimen>
+    <dimen name="my_profile_et_mobile_marginTop">20dp</dimen>
+    <dimen name="my_profile_name_til_marginTop">25dp</dimen>
+    <dimen name="my_profile_screen_content_marginStartEnd">16dp</dimen>
+    <dimen name="my_profile_screen_content_marginTopBottom">10dp</dimen>
+    <dimen name="my_profile_screen_content_padding">16dp</dimen>
+    <dimen name="my_profile_user_image_size">100dp</dimen>
     <dimen name="nav_content_margin_StartEnd">16dp</dimen>
     <dimen name="nav_content_margin_bottom">10dp</dimen>
     <dimen name="nav_content_margin_top">5dp</dimen>
@@ -81,6 +89,9 @@
     <string name="image_contentDescription">image</string>
     <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on Projemanag’s Minimalist Interface.</string>
     <string name="let_s_get_started_text">Let\'s Get started</string>
+    <string name="mobile">Mobile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_profile_title">My Profile</string>
     <string name="name">Name</string>
     <string name="nav_my_profile">My Profile</string>
     <string name="nav_sign_out">Sign Out</string>
@@ -92,6 +103,7 @@
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="update">Update</string>
     <style name="Theme.Albedo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
