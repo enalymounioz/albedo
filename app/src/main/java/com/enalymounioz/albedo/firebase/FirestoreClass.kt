@@ -3,10 +3,8 @@ package com.enalymounioz.albedo.firebase
 import android.app.Activity
 import android.util.Log
 import android.widget.Toast
-import com.enalymounioz.albedo.activities.MainActivity
-import com.enalymounioz.albedo.activities.MyProfileActivity
-import com.enalymounioz.albedo.activities.SignInActivity
-import com.enalymounioz.albedo.activities.SignUpActivity
+import com.enalymounioz.albedo.activities.*
+import com.enalymounioz.albedo.models.Board
 import com.enalymounioz.albedo.models.User
 import com.enalymounioz.albedo.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
@@ -95,8 +93,25 @@ class FirestoreClass {
             }
     }
 
-    // TODO (Step 5: Create a function to update the user profile data into the database.)
-    // START
+   fun createBoard(activity: CreateBoardActivity, board: Board){
+       mFireStore.collection(Constants.BOARDS)
+           .document()
+           .set(board, SetOptions.merge())
+           .addOnSuccessListener {
+               Log.e(activity.javaClass.simpleName, "Board created successfully.")
+               Toast.makeText(activity, "Board created successfully.",
+                   Toast.LENGTH_SHORT).show()
+               activity.boardCreatedSuccessfully()
+           }.addOnFailureListener{
+               exception ->
+               activity.hideProgressDialog()
+               Log.e(
+                   activity.javaClass.simpleName,
+                   "Error while creating board.",
+                   exception
+               )
+           }
+   }
     /**
      * A function to update the user profile data into the database.
      */
