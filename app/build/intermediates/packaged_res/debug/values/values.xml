@@ -21,6 +21,7 @@
     <color name="colorAccent">#9395D3</color>
     <color name="colorPrimary">#B3B7EE</color>
     <color name="colorPrimaryDark">#A2A3bb</color>
+    <color name="divider_color">#EAEAEA</color>
     <color name="primary_text_color">#000807</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -37,13 +38,18 @@
     <dimen name="authentication_screen_marginTop">60dp</dimen>
     <dimen name="authentication_screen_til_marginStartEnd">16dp</dimen>
     <dimen name="authentication_screen_til_marginTop">20dp</dimen>
+    <dimen name="board_image_size">100dp</dimen>
     <dimen name="btn_marginStartEnd">20dp</dimen>
     <dimen name="btn_paddingTopBottom">8dp</dimen>
     <dimen name="btn_text_size">18sp</dimen>
     <dimen name="card_view_corner_radius">10dp</dimen>
     <dimen name="card_view_elevation">10dp</dimen>
     <dimen name="card_view_layout_content_padding">16dp</dimen>
+    <dimen name="create_board_btn_marginTop">30dp</dimen>
+    <dimen name="create_board_content_padding">16dp</dimen>
+    <dimen name="create_board_til_marginTop">25dp</dimen>
     <dimen name="et_text_size">16sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="height_of_nav_main">200dp</dimen>
     <dimen name="intro_screen_image_marginTop">30dp</dimen>
     <dimen name="intro_screen_sign_in_btn_marginTop">50dp</dimen>
@@ -54,12 +60,22 @@
     <dimen name="intro_text_marginStartEnd">20dp</dimen>
     <dimen name="intro_text_marginTop">10dp</dimen>
     <dimen name="intro_text_size">16sp</dimen>
+    <dimen name="item_board_content_marginBottom">10dp</dimen>
+    <dimen name="item_board_content_padding">10dp</dimen>
+    <dimen name="item_board_created_by_text_size">14sp</dimen>
+    <dimen name="item_board_divider_height">0.3dp</dimen>
+    <dimen name="item_board_divider_marginTop">5dp</dimen>
+    <dimen name="item_board_image_circular_border_width">0.5dp</dimen>
+    <dimen name="item_board_image_size">60dp</dimen>
+    <dimen name="item_board_name_layout_marginStart">10dp</dimen>
+    <dimen name="item_board_name_text_size">18sp</dimen>
     <dimen name="lets_get_started_text_marginTop">25dp</dimen>
     <dimen name="lets_get_started_text_size">25sp</dimen>
+    <dimen name="main_screen_content_padding">16dp</dimen>
     <dimen name="my_profile_btn_update_marginTop">30dp</dimen>
     <dimen name="my_profile_et_email_marginTop">20dp</dimen>
     <dimen name="my_profile_et_mobile_marginTop">20dp</dimen>
-    <dimen name="my_profile_name_til_marginTop">25dp</dimen>
+    <dimen name="my_profile_name_til_marginTop">25dp </dimen>
     <dimen name="my_profile_screen_content_marginStartEnd">16dp</dimen>
     <dimen name="my_profile_screen_content_marginTopBottom">10dp</dimen>
     <dimen name="my_profile_screen_content_padding">16dp</dimen>
@@ -71,6 +87,7 @@
     <dimen name="nav_image_circular_border_width">1dp</dimen>
     <dimen name="nav_image_size">80dp</dimen>
     <dimen name="nav_user_name_text_size">18sp</dimen>
+    <dimen name="no_boards_available_text_size">16sp</dimen>
     <dimen name="progress_bar_size">50dp</dimen>
     <dimen name="progress_dialog_content_padding">10dp</dimen>
     <dimen name="progress_text_marginStart">16dp</dimen>
@@ -79,6 +96,9 @@
     <dimen name="splash_screen_title_text_size">70sp</dimen>
     <dimen name="toolbar_title_text_size">18sp</dimen>
     <string name="app_name">Albedo</string>
+    <string name="board_name">Board Name</string>
+    <string name="create">CREATE</string>
+    <string name="create_board_title">Create Board</string>
     <string name="default_web_client_id" translatable="false">686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com</string>
     <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">686691612168</string>
@@ -95,6 +115,7 @@
     <string name="name">Name</string>
     <string name="nav_my_profile">My Profile</string>
     <string name="nav_sign_out">Sign Out</string>
+    <string name="no_boards_are_available">No Boards are available!!!</string>
     <string name="now_we_can_register_user">Now we can register a new user</string>
     <string name="password">Password</string>
     <string name="pleace_click_back_again_to_exit">Please click back again to exit</string>

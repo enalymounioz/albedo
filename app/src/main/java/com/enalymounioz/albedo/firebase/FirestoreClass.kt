@@ -1,12 +1,11 @@
 package com.enalymounioz.albedo.firebase
 
 import android.app.Activity
+import android.provider.ContactsContract.CommonDataKinds.Contactables
 import android.util.Log
 import android.widget.Toast
-import com.enalymounioz.albedo.activities.MainActivity
-import com.enalymounioz.albedo.activities.MyProfileActivity
-import com.enalymounioz.albedo.activities.SignInActivity
-import com.enalymounioz.albedo.activities.SignUpActivity
+import com.enalymounioz.albedo.activities.*
+import com.enalymounioz.albedo.models.Board
 import com.enalymounioz.albedo.models.User
 import com.enalymounioz.albedo.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
@@ -45,10 +44,11 @@ class FirestoreClass {
             }
     }
 
+    // TODO (Step 5: Add a parameter to check whether to read the boards list or not.)
     /**
      * A function to SignIn using firebase and get the user details from Firestore Database.
      */
-    fun loadUserData(activity: Activity) {
+    fun loadUserData(activity: Activity, isToReadBoardsList: Boolean = false) {
 
         // Here we pass the collection name from which we wants the data.
         mFireStore.collection(Constants.USERS)
@@ -67,7 +67,7 @@ class FirestoreClass {
                         activity.signInSuccess(loggedInUser)
                     }
                     is MainActivity -> {
-                        activity.updateNavigationUserDetails(loggedInUser)
+                        activity.updateNavigationUserDetails(loggedInUser, isToReadBoardsList)
                     }
                     is MyProfileActivity -> {
                         activity.setUserDataInUI(loggedInUser)
@@ -95,8 +95,6 @@ class FirestoreClass {
             }
     }
 
-    // TODO (Step 5: Create a function to update the user profile data into the database.)
-    // START
     /**
      * A function to update the user profile data into the database.
      */
@@ -120,6 +118,68 @@ class FirestoreClass {
                     "Error while creating a board.",
                     e
                 )
+            }
+    }
+
+    /**
+     * A function for creating a board and making an entry in the database.
+     */
+    fun createBoard(activity: CreateBoardActivity, board: Board) {
+
+        mFireStore.collection(Constants.BOARDS)
+            .document()
+            .set(board, SetOptions.merge())
+            .addOnSuccessListener {
+                Log.e(activity.javaClass.simpleName, "Board created successfully.")
+
+                Toast.makeText(activity, "Board created successfully.", Toast.LENGTH_SHORT).show()
+
+                activity.boardCreatedSuccessfully()
+            }
+            .addOnFailureListener { e ->
+                activity.hideProgressDialog()
+                Log.e(
+                    activity.javaClass.simpleName,
+                    "Error while creating a board.",
+                    e
+                )
+            }
+    }
+
+    // TODO (Step 4: Create a function to get the list of created boards from the database.)
+    // START
+    /**
+     * A function to get the list of created boards from the database.
+     */
+    fun getBoardsList(activity: MainActivity) {
+
+        // The collection name for BOARDS
+        mFireStore.collection(Constants.BOARDS)
+            // A where array query as we want the list of the board in which the user is assigned. So here you can pass the current user id.
+            .whereArrayContains(Constants.ASSIGNED_TO, getCurrentUserID())
+            .get() // Will get the documents snapshots.
+            .addOnSuccessListener { document ->
+                // Here we get the list of boards in the form of documents.
+                Log.e(activity.javaClass.simpleName, document.documents.toString())
+                // Here we have created a new instance for Boards ArrayList.
+                val boardsList: ArrayList<Board> = ArrayList()
+
+                // A for loop as per the list of documents to convert them into Boards ArrayList.
+                for (i in document.documents) {
+
+                    val board = i.toObject(Board::class.java)!!
+                    board.documentId = i.id
+
+                    boardsList.add(board)
+                }
+
+                // Here pass the result to the base activity.
+                activity.populateBoardsListToUI(boardsList)
+            }
+            .addOnFailureListener { e ->
+
+                activity.hideProgressDialog()
+                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
             }
     }
     // END
