@@ -6,9 +6,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.provider.MediaStore
 import android.util.Log
-import android.webkit.MimeTypeMap
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -23,7 +21,6 @@ import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_my_profile.*
 import kotlinx.android.synthetic.main.activity_my_profile.iv_profile_user_image
 import java.io.IOException
-import kotlin.math.PI
 class MyProfileActivity : BaseActivity() {
 
     private var mSelectedImageFileUri: Uri? = null

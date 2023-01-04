@@ -1358,6 +1358,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color divider_color
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -1972,6 +1973,7 @@ dimen authentication_screen_marginStartEnd
 dimen authentication_screen_marginTop
 dimen authentication_screen_til_marginStartEnd
 dimen authentication_screen_til_marginTop
+dimen board_image_size
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen btn_marginStartEnd
@@ -1991,6 +1993,9 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen create_board_btn_marginTop
+dimen create_board_content_padding
+dimen create_board_til_marginTop
 dimen def_drawer_elevation
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -2043,6 +2048,7 @@ dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen et_text_size
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2063,6 +2069,15 @@ dimen intro_text_line_spacing_extra
 dimen intro_text_marginStartEnd
 dimen intro_text_marginTop
 dimen intro_text_size
+dimen item_board_content_marginBottom
+dimen item_board_content_padding
+dimen item_board_created_by_text_size
+dimen item_board_divider_height
+dimen item_board_divider_marginTop
+dimen item_board_image_circular_border_width
+dimen item_board_image_size
+dimen item_board_name_layout_marginStart
+dimen item_board_name_text_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -2275,6 +2290,7 @@ dimen m3_sys_state_hover_state_layer_opacity
 dimen m3_sys_state_pressed_state_layer_opacity
 dimen m3_timepicker_display_stroke_width
 dimen m3_timepicker_window_elevation
+dimen main_screen_content_padding
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_padding
 dimen material_clock_face_margin_top
@@ -2522,6 +2538,7 @@ dimen nav_divider_height
 dimen nav_image_circular_border_width
 dimen nav_image_size
 dimen nav_user_name_text_size
+dimen no_boards_available_text_size
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -2670,6 +2687,7 @@ drawable googleg_standard_color_18
 drawable ic_action_navigation_menu
 drawable ic_background
 drawable ic_black_color_back_24dp
+drawable ic_board_place_holder
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2684,6 +2702,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_nav_sign_out
 drawable ic_nav_user
 drawable ic_user_place_holder
+drawable ic_vector_add_24dp
 drawable ic_white_color_back_24dp
 drawable intro_background
 drawable m3_appbar_background
@@ -2867,6 +2886,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_create
 id btn_sign_in
 id btn_sign_in_intro
 id btn_sign_up
@@ -2953,6 +2973,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id et_board_name
 id et_email
 id et_email_sign_in
 id et_mobile
@@ -2962,6 +2983,7 @@ id et_password_sign_in
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_create_board
 id fade
 id fill
 id fill_horizontal
@@ -3010,6 +3032,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_board_image
 id iv_profile_user_image
 id jumpToEnd
 id jumpToStart
@@ -3136,6 +3159,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_boards_list
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3232,6 +3256,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_create_board_activity
 id toolbar_main_activity
 id toolbar_my_profile_activity
 id toolbar_sign_in_activity
@@ -3249,9 +3274,11 @@ id transition_transform
 id triangle
 id tv_app_name
 id tv_app_name_intro
+id tv_created_by
+id tv_name
+id tv_no_boards_available
 id tv_progress_text
 id tv_title
-id tv_user_name
 id tv_username
 id unchecked
 id uniform
@@ -3401,6 +3428,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_base
+layout activity_create_board
 layout activity_intro
 layout activity_main
 layout activity_my_profile
@@ -3428,6 +3456,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_progress
+layout item_board
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3523,6 +3552,7 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string board_name
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -3552,6 +3582,8 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string create
+string create_board_title
 string default_web_client_id
 string email
 string error_a11y_label
@@ -3666,6 +3698,7 @@ string my_profile_title
 string name
 string nav_my_profile
 string nav_sign_out
+string no_boards_are_available
 string now_we_can_register_user
 string password
 string password_toggle_content_description

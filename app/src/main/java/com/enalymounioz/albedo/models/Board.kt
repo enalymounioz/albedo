@@ -3,40 +3,36 @@ package com.enalymounioz.albedo.models
 import android.os.Parcel
 import android.os.Parcelable
 
-class Board (
+data class Board(
+    val name: String = "",
+    val image: String = "",
+    val createdBy: String = "",
+    val assignedTo: ArrayList<String> = ArrayList(),
+    var documentId: String = ""
+) : Parcelable {
+    constructor(source: Parcel) : this(
+        source.readString()!!,
+        source.readString()!!,
+        source.readString()!!,
+        source.createStringArrayList()!!,
+        source.readString()!!
+    )
 
-    val name: String="",
-    val image: String="",
-    val createdBe:String="",
-    val assignedTo: ArrayList<String> = ArrayList()
-): Parcelable {
+    override fun describeContents() = 0
 
-    constructor(parcel: Parcel) : this(
-        parcel.readString()!!,
-        parcel.readString()!!,
-        parcel.readString()!!,
-        parcel.createStringArrayList()!!
-    ) {
+    override fun writeToParcel(dest: Parcel, flags: Int) = with(dest) {
+        writeString(name)
+        writeString(image)
+        writeString(createdBy)
+        writeStringList(assignedTo)
+        writeString(documentId)
     }
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) = with(parcel) {
-        parcel.writeString(name)
-        parcel.writeString(image)
-        parcel.writeString(createdBe)
-        parcel.writeStringList(assignedTo)
-    }
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object CREATOR : Parcelable.Creator<Board> {
-        override fun createFromParcel(parcel: Parcel): Board {
-            return Board(parcel)
-        }
-
-        override fun newArray(size: Int): Array<Board?> {
-            return arrayOfNulls(size)
+    companion object {
+        @JvmField
+        val CREATOR: Parcelable.Creator<Board> = object : Parcelable.Creator<Board> {
+            override fun createFromParcel(source: Parcel): Board = Board(source)
+            override fun newArray(size: Int): Array<Board?> = arrayOfNulls(size)
         }
     }
 }
