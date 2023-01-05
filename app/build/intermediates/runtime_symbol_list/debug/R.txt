@@ -2559,6 +2559,7 @@ int dimen progress_text_marginStart 0x7f070295
 int dimen progress_text_size 0x7f070296
 int dimen sign_up_screen_btn_marginTop 0x7f070297
 int dimen splash_screen_title_text_size 0x7f070298
+int dimen task_list_content_padding 0x7f0702ad
 int dimen toolbar_title_text_size 0x7f070299
 int dimen tooltip_corner_radius 0x7f07029a
 int dimen tooltip_horizontal_padding 0x7f07029b
@@ -3159,6 +3160,7 @@ int id right_side 0x7f0a0177
 int id rounded 0x7f0a0178
 int id row_index_key 0x7f0a0179
 int id rv_boards_list 0x7f0a0208
+int id rv_task_list 0x7f0a020c
 int id save_non_transition_alpha 0x7f0a017a
 int id save_overlay_view 0x7f0a017b
 int id sawtooth 0x7f0a017c
@@ -3260,6 +3262,7 @@ int id toolbar_main_activity 0x7f0a01db
 int id toolbar_my_profile_activity 0x7f0a01dc
 int id toolbar_sign_in_activity 0x7f0a01dd
 int id toolbar_sign_up_activity 0x7f0a01de
+int id toolbar_task_list_activity 0x7f0a020d
 int id top 0x7f0a01df
 int id topPanel 0x7f0a01e0
 int id touch_outside 0x7f0a01e1
@@ -3434,6 +3437,7 @@ int layout activity_my_profile 0x7f0d0020
 int layout activity_sign_in 0x7f0d0021
 int layout activity_sign_up 0x7f0d0022
 int layout activity_splash 0x7f0d0023
+int layout activity_task_list 0x7f0d0076
 int layout app_bar_main 0x7f0d0024
 int layout browser_actions_context_menu_page 0x7f0d0025
 int layout browser_actions_context_menu_row 0x7f0d0026
