@@ -11,6 +11,7 @@ import com.enalymounioz.albedo.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
+
 /**
  * A custom class where we will add the operation performed for the firestore database.
  */
@@ -44,7 +45,6 @@ class FirestoreClass {
             }
     }
 
-    // TODO (Step 5: Add a parameter to check whether to read the boards list or not.)
     /**
      * A function to SignIn using firebase and get the user details from Firestore Database.
      */
@@ -146,8 +146,6 @@ class FirestoreClass {
             }
     }
 
-    // TODO (Step 4: Create a function to get the list of created boards from the database.)
-    // START
     /**
      * A function to get the list of created boards from the database.
      */
@@ -182,7 +180,22 @@ class FirestoreClass {
                 Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
             }
     }
-    // END
+
+    fun getBoardDetails(activity: TaskListActivity, documentId: String) {
+        mFireStore.collection(Constants.BOARDS)
+            .document(documentId)
+            .get()
+            .addOnSuccessListener { document ->
+                Log.e(activity.javaClass.simpleName, document.toString())
+
+                // Send the result of board to the base activity.
+                activity.boardDetails(document.toObject(Board::class.java)!!)
+            }
+            .addOnFailureListener { e ->
+                activity.hideProgressDialog()
+                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+            }
+    }
 
     /**
      * A function for getting the user id of current logged user.

@@ -81,6 +81,7 @@ dimen progress_text_marginStart
 dimen progress_text_size
 dimen sign_up_screen_btn_marginTop
 dimen splash_screen_title_text_size
+dimen task_list_content_padding
 dimen toolbar_title_text_size
 drawable ic_action_navigation_menu
 drawable ic_background
@@ -121,11 +122,13 @@ id nav_sign_out
 id nav_view
 id progressBar
 id rv_boards_list
+id rv_task_list
 id toolbar_create_board_activity
 id toolbar_main_activity
 id toolbar_my_profile_activity
 id toolbar_sign_in_activity
 id toolbar_sign_up_activity
+id toolbar_task_list_activity
 id tv_app_name
 id tv_app_name_intro
 id tv_created_by
@@ -142,6 +145,7 @@ layout activity_my_profile
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
+layout activity_task_list
 layout app_bar_main
 layout content_main
 layout dialog_progress

@@ -92,6 +92,10 @@
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\ic_vector_add_24dp.xml"
     },
     {
+        "merged": "com.enalymounioz.albedo.app-merged_res-37:/layout_activity_task_list.xml.flat",
+        "source": "com.enalymounioz.albedo.app-main-39:/layout/activity_task_list.xml"
+    },
+    {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_action_navigation_menu.xml.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\ic_action_navigation_menu.xml"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_background.png.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\ic_background.png"
+    },
+    {
+        "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_item_board.xml.flat",
+        "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\item_board.xml"
     },
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_my_profile.xml.flat",
@@ -136,16 +144,8 @@
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\content_main.xml"
     },
     {
-        "merged": "com.enalymounioz.albedo.app-merged_res-37:/layout_content_main.xml.flat",
-        "source": "com.enalymounioz.albedo.app-main-39:/layout/content_main.xml"
-    },
-    {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_board_place_holder.png.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\ic_board_place_holder.png"
-    },
-    {
-        "merged": "com.enalymounioz.albedo.app-merged_res-37:/layout_item_board.xml.flat",
-        "source": "com.enalymounioz.albedo.app-main-39:/layout/item_board.xml"
     },
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",

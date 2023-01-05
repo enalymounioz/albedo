@@ -2560,6 +2560,7 @@ dimen progress_text_marginStart
 dimen progress_text_size
 dimen sign_up_screen_btn_marginTop
 dimen splash_screen_title_text_size
+dimen task_list_content_padding
 dimen toolbar_title_text_size
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -3160,6 +3161,7 @@ id right_side
 id rounded
 id row_index_key
 id rv_boards_list
+id rv_task_list
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3261,6 +3263,7 @@ id toolbar_main_activity
 id toolbar_my_profile_activity
 id toolbar_sign_in_activity
 id toolbar_sign_up_activity
+id toolbar_task_list_activity
 id top
 id topPanel
 id touch_outside
@@ -3435,6 +3438,7 @@ layout activity_my_profile
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
+layout activity_task_list
 layout app_bar_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

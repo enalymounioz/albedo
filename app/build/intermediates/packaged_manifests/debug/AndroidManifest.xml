@@ -25,11 +25,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Albedo" >
         <activity
+            android:name="com.enalymounioz.albedo.activities.TaskListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Albedo.NoActionBar" />
+        <activity
             android:name="com.enalymounioz.albedo.activities.CreateBoardActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Albedo.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.Albedo.NoActionBar" />
         <activity
             android:name="com.enalymounioz.albedo.activities.BaseActivity"
             android:exported="false"

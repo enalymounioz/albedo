@@ -29,6 +29,8 @@ object Constants {
     // A unique code of image selection from Phone Storage.
     const val PICK_IMAGE_REQUEST_CODE = 2
 
+    const val DOCUMENT_ID: String = "documentId"
+
     /**
      * A function for user profile image selection from phone storage.
      */

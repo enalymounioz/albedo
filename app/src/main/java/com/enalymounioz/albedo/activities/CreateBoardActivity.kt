@@ -213,6 +213,8 @@ class CreateBoardActivity : BaseActivity() {
 
         hideProgressDialog()
 
+        setResult(Activity.RESULT_OK)
+
         finish()
     }
 }

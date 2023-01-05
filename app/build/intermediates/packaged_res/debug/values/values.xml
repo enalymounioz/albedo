@@ -94,6 +94,7 @@
     <dimen name="progress_text_size">16sp</dimen>
     <dimen name="sign_up_screen_btn_marginTop">30dp</dimen>
     <dimen name="splash_screen_title_text_size">70sp</dimen>
+    <dimen name="task_list_content_padding">10dp</dimen>
     <dimen name="toolbar_title_text_size">18sp</dimen>
     <string name="app_name">Albedo</string>
     <string name="board_name">Board Name</string>
