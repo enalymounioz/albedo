@@ -20,10 +20,8 @@ import com.enalymounioz.albedo.utils.Constants
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_sign_in.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.android.synthetic.main.nav_header_main.*
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -102,11 +100,12 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         ) {
             // Get the user updated details.
             FirestoreClass().loadUserData(this@MainActivity)
-        }else if(resultCode == Activity.RESULT_OK
-            && requestCode == CREATE_BOARD_REQUEST_CODE){
+        } else if (resultCode == Activity.RESULT_OK
+            && requestCode == CREATE_BOARD_REQUEST_CODE
+        ) {
             FirestoreClass().getBoardsList(this)
 
-        }else {
+        } else {
             Log.e("Cancelled", "Cancelled")
         }
     }
@@ -136,7 +135,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
     }
 
-    // TODO (Step 7: Add a parameter to check whether to read the boards list or not.)
     /**
      * A function to get the current user details from firebase.
      */
@@ -175,8 +173,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         // END
     }
 
-    // TODO (Step 1: Create a function to populate the result of BOARDS list in the UI i.e in the recyclerView.)
-    // START
     /**
      * A function to populate the result of BOARDS list in the UI i.e in the recyclerView.
      */
@@ -196,8 +192,8 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             val adapter = BoardItemsAdapter(this@MainActivity, boardsList)
             rv_boards_list.adapter = adapter // Attach the adapter to the recyclerView.
 
-            adapter. setOnClickListener(object : BoardItemsAdapter.OnClickListener {
-                override fun onClick(position: Int, model: Board){
+            adapter.setOnClickListener(object : BoardItemsAdapter.OnClickListener {
+                override fun onClick(position: Int, model: Board) {
                     val intent = Intent(this@MainActivity, TaskListActivity::class.java)
                     intent.putExtra(Constants.DOCUMENT_ID, model.documentId)
                     startActivity(intent)
@@ -205,13 +201,11 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             })
 
 
-
         } else {
             rv_boards_list.visibility = View.GONE
             tv_no_boards_available.visibility = View.VISIBLE
         }
     }
-    // END
 
     /**
      * A companion object to declare the constants.

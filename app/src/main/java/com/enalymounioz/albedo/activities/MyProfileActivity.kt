@@ -21,6 +21,7 @@ import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_my_profile.*
 import kotlinx.android.synthetic.main.activity_my_profile.iv_profile_user_image
 import java.io.IOException
+
 class MyProfileActivity : BaseActivity() {
 
     private var mSelectedImageFileUri: Uri? = null
@@ -43,7 +44,7 @@ class MyProfileActivity : BaseActivity() {
             ) {
                 Constants.showImageChooser(this)
             } else {
-                  ActivityCompat.requestPermissions(
+                ActivityCompat.requestPermissions(
                     this,
                     arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
                     Constants.READ_STORAGE_PERMISSION_CODE
@@ -51,8 +52,6 @@ class MyProfileActivity : BaseActivity() {
             }
         }
 
-        // TODO (Step 10: Add a click event for updating the user profile data to the database.)
-        // START
         btn_update.setOnClickListener {
 
             // Here if the image is not selected then update the other details of user.
@@ -67,7 +66,6 @@ class MyProfileActivity : BaseActivity() {
                 updateUserProfileData()
             }
         }
-        // END
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -170,7 +168,8 @@ class MyProfileActivity : BaseActivity() {
             //getting the storage reference
             val sRef: StorageReference = FirebaseStorage.getInstance().reference.child(
                 "USER_IMAGE" + System.currentTimeMillis() + "." + getFileExtension(
-                    this,  mSelectedImageFileUri)
+                    this, mSelectedImageFileUri
+                )
             )
 
             //adding the file to reference

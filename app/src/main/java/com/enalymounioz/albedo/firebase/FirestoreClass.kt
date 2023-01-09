@@ -95,6 +95,23 @@ class FirestoreClass {
             }
     }
 
+    fun addUpdateTaskList(activity: TaskListActivity, board: Board){
+        val taskListHashMap = HashMap<String,Any>()
+        taskListHashMap[Constants.TASK_LIST]= board.taskList
+        mFireStore.collection(Constants.BOARDS)
+            .document(board.documentId)
+            .update(taskListHashMap)
+            .addOnSuccessListener {
+                Log.e(activity.javaClass.simpleName, "TaskList updated successfully")
+
+                activity.addUpdateTaskListSuccess()
+            }.addOnFailureListener{
+                exception ->
+                activity.hideProgressDialog()
+                Log.e(activity.javaClass.simpleName, "Error while creating a board", exception)
+            }
+    }
+
     /**
      * A function to update the user profile data into the database.
      */
@@ -189,7 +206,10 @@ class FirestoreClass {
                 Log.e(activity.javaClass.simpleName, document.toString())
 
                 // Send the result of board to the base activity.
-                activity.boardDetails(document.toObject(Board::class.java)!!)
+               val board = document.toObject(Board::class.java)!!
+                board.documentId = document.id
+                activity.boardDetails(board)
+
             }
             .addOnFailureListener { e ->
                 activity.hideProgressDialog()
