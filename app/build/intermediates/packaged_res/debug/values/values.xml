@@ -71,6 +71,13 @@
     <dimen name="item_board_image_size">60dp</dimen>
     <dimen name="item_board_name_layout_marginStart">10dp</dimen>
     <dimen name="item_board_name_text_size">18sp</dimen>
+    <dimen name="item_card_content_margin">8dp</dimen>
+    <dimen name="item_card_cv_elevation">5dp</dimen>
+    <dimen name="item_card_label_height">15dp</dimen>
+    <dimen name="item_card_members_text_padding">10dp</dimen>
+    <dimen name="item_card_members_text_size">14sp</dimen>
+    <dimen name="item_card_name_text_padding">10dp</dimen>
+    <dimen name="item_card_name_text_size">16sp</dimen>
     <dimen name="lets_get_started_text_marginTop">25dp</dimen>
     <dimen name="lets_get_started_text_size">25sp</dimen>
     <dimen name="main_screen_content_padding">16dp</dimen>
