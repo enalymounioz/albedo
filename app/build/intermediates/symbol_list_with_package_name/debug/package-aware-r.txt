@@ -2080,6 +2080,13 @@ dimen item_board_image_circular_border_width
 dimen item_board_image_size
 dimen item_board_name_layout_marginStart
 dimen item_board_name_text_size
+dimen item_card_content_margin
+dimen item_card_cv_elevation
+dimen item_card_label_height
+dimen item_card_members_text_padding
+dimen item_card_members_text_size
+dimen item_card_name_text_padding
+dimen item_card_name_text_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -3314,7 +3321,9 @@ id tv_add_card
 id tv_add_task_list
 id tv_app_name
 id tv_app_name_intro
+id tv_card_name
 id tv_created_by
+id tv_members_name
 id tv_name
 id tv_no_boards_available
 id tv_progress_text
@@ -3327,6 +3336,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id view_label_color
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3499,6 +3509,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_progress
 layout item_board
+layout item_card
 layout item_task
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
