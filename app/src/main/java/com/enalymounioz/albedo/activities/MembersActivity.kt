@@ -104,4 +104,10 @@ class MembersActivity : BaseActivity() {
         }
         dialog.show()
     }
+
+    fun memberAssignSuccess(user: User){
+        hideProgressDialog()
+        mAssignedMembersList.add(user)
+        setupMembersList(mAssignedMembersList)
+    }
 }
