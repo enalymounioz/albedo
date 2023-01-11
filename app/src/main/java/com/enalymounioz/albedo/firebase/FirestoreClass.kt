@@ -11,6 +11,7 @@ import com.enalymounioz.albedo.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
+import java.lang.reflect.Member
 
 /**
  * A custom class where we will add the operation performed for the firestore database.
@@ -95,9 +96,9 @@ class FirestoreClass {
             }
     }
 
-    fun addUpdateTaskList(activity: TaskListActivity, board: Board){
-        val taskListHashMap = HashMap<String,Any>()
-        taskListHashMap[Constants.TASK_LIST]= board.taskList
+    fun addUpdateTaskList(activity: TaskListActivity, board: Board) {
+        val taskListHashMap = HashMap<String, Any>()
+        taskListHashMap[Constants.TASK_LIST] = board.taskList
         mFireStore.collection(Constants.BOARDS)
             .document(board.documentId)
             .update(taskListHashMap)
@@ -105,8 +106,7 @@ class FirestoreClass {
                 Log.e(activity.javaClass.simpleName, "TaskList updated successfully")
 
                 activity.addUpdateTaskListSuccess()
-            }.addOnFailureListener{
-                exception ->
+            }.addOnFailureListener { exception ->
                 activity.hideProgressDialog()
                 Log.e(activity.javaClass.simpleName, "Error while creating a board", exception)
             }
@@ -206,7 +206,7 @@ class FirestoreClass {
                 Log.e(activity.javaClass.simpleName, document.toString())
 
                 // Send the result of board to the base activity.
-               val board = document.toObject(Board::class.java)!!
+                val board = document.toObject(Board::class.java)!!
                 board.documentId = document.id
                 activity.boardDetails(board)
 
@@ -231,5 +231,50 @@ class FirestoreClass {
         }
 
         return currentUserID
+    }
+
+    fun getAssignedMembersListDetails(activity: MembersActivity, assignedTo: ArrayList<String>) {
+        mFireStore.collection(Constants.USERS)
+            .whereIn(Constants.ID, assignedTo)
+            .get()
+            .addOnSuccessListener { document ->
+                Log.e(activity.javaClass.simpleName, document.documents.toString())
+
+                val usersList: ArrayList<User> = ArrayList()
+
+                for (i in document.documents) {
+                    val user = i.toObject(User::class.java)!!
+                    usersList.add(user)
+                }
+
+                activity.setupMembersList(usersList)
+            }.addOnFailureListener { e ->
+                activity.hideProgressDialog()
+                Log.e(
+                    activity.javaClass.simpleName, "Error while creating a board.", e
+                )
+            }
+    }
+
+    fun getMemberDetails(activity: MembersActivity, email: String) {
+        mFireStore.collection(Constants.USERS)
+            .get()
+            .addOnSuccessListener { document ->
+                if (document.documents.size > 0) {
+                    val user = document.documents[0].toObject(User::class.java)!!
+                    activity.memberDetails(user)
+                } else {
+                    activity.hideProgressDialog()
+                    activity.showErrorSnackbar("No such member found")
+                }
+            }
+            .addOnFailureListener { e->
+                activity.hideProgressDialog()
+                Log.e(
+                    activity.javaClass.simpleName,
+                    "Error while getting user details",
+                    e
+                )
+            }
     }
 }

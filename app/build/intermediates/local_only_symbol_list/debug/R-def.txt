@@ -65,9 +65,20 @@ dimen item_card_members_text_padding
 dimen item_card_members_text_size
 dimen item_card_name_text_padding
 dimen item_card_name_text_size
+dimen item_member_content_padding
+dimen item_member_detail_layout_marginStart
+dimen item_member_divider_height
+dimen item_member_divider_marginTop
+dimen item_member_email_text_size
+dimen item_member_image_circular_width_size
+dimen item_member_marginBottom
+dimen item_member_member_image_size
+dimen item_member_name_text_size
 dimen lets_get_started_text_marginTop
 dimen lets_get_started_text_size
 dimen main_screen_content_padding
+dimen members_content_padding
+dimen members_cv_marginTop
 dimen my_profile_btn_update_marginTop
 dimen my_profile_et_email_marginTop
 dimen my_profile_et_mobile_marginTop
@@ -125,6 +136,7 @@ drawable organizer_logo
 drawable shape_button_rounded
 drawable white_border_shape_button_rounded
 font nunito
+id action_members
 id btn_create
 id btn_sign_in
 id btn_sign_in_intro
@@ -155,6 +167,7 @@ id ib_done_edit_list_name
 id ib_done_list_name
 id ib_edit_list_name
 id iv_board_image
+id iv_member_image
 id iv_profile_user_image
 id ll_task_item
 id ll_title_view
@@ -164,9 +177,11 @@ id nav_view
 id progressBar
 id rv_boards_list
 id rv_card_list
+id rv_members_list
 id rv_task_list
 id toolbar_create_board_activity
 id toolbar_main_activity
+id toolbar_members_activity
 id toolbar_my_profile_activity
 id toolbar_sign_in_activity
 id toolbar_sign_up_activity
@@ -177,6 +192,8 @@ id tv_app_name
 id tv_app_name_intro
 id tv_card_name
 id tv_created_by
+id tv_member_email
+id tv_member_name
 id tv_members_name
 id tv_name
 id tv_no_boards_available
@@ -189,6 +206,7 @@ layout activity_base
 layout activity_create_board
 layout activity_intro
 layout activity_main
+layout activity_members
 layout activity_my_profile
 layout activity_sign_in
 layout activity_sign_up
@@ -199,9 +217,11 @@ layout content_main
 layout dialog_progress
 layout item_board
 layout item_card
+layout item_member
 layout item_task
 layout nav_header_main
 menu activity_main_drawer
+menu menu_members
 mipmap ic_launcher
 mipmap ic_launcher_round
 string action_add_card
@@ -223,6 +243,7 @@ string hint_list_name
 string image_contentDescription
 string intro_text_description
 string let_s_get_started_text
+string members
 string mobile
 string my_profile
 string my_profile_title

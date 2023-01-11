@@ -2087,6 +2087,15 @@ dimen item_card_members_text_padding
 dimen item_card_members_text_size
 dimen item_card_name_text_padding
 dimen item_card_name_text_size
+dimen item_member_content_padding
+dimen item_member_detail_layout_marginStart
+dimen item_member_divider_height
+dimen item_member_divider_marginTop
+dimen item_member_email_text_size
+dimen item_member_image_circular_width_size
+dimen item_member_marginBottom
+dimen item_member_member_image_size
+dimen item_member_name_text_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -2337,6 +2346,8 @@ dimen material_time_input_padding_bottom
 dimen material_time_picker_minimum_screen_height
 dimen material_time_picker_minimum_screen_width
 dimen material_timepicker_dialog_buttons_margin_top
+dimen members_content_padding
+dimen members_cv_marginTop
 dimen mtrl_alert_dialog_background_inset_bottom
 dimen mtrl_alert_dialog_background_inset_end
 dimen mtrl_alert_dialog_background_inset_start
@@ -2869,6 +2880,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_members
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -3073,6 +3085,7 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id iv_board_image
+id iv_member_image
 id iv_profile_user_image
 id jumpToEnd
 id jumpToStart
@@ -3203,6 +3216,7 @@ id rounded
 id row_index_key
 id rv_boards_list
 id rv_card_list
+id rv_members_list
 id rv_task_list
 id save_non_transition_alpha
 id save_overlay_view
@@ -3302,6 +3316,7 @@ id title_template
 id toggle
 id toolbar_create_board_activity
 id toolbar_main_activity
+id toolbar_members_activity
 id toolbar_my_profile_activity
 id toolbar_sign_in_activity
 id toolbar_sign_up_activity
@@ -3323,6 +3338,8 @@ id tv_app_name
 id tv_app_name_intro
 id tv_card_name
 id tv_created_by
+id tv_member_email
+id tv_member_name
 id tv_members_name
 id tv_name
 id tv_no_boards_available
@@ -3482,6 +3499,7 @@ layout activity_base
 layout activity_create_board
 layout activity_intro
 layout activity_main
+layout activity_members
 layout activity_my_profile
 layout activity_sign_in
 layout activity_sign_up
@@ -3510,6 +3528,7 @@ layout design_text_input_start_icon
 layout dialog_progress
 layout item_board
 layout item_card
+layout item_member
 layout item_task
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3571,6 +3590,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu activity_main_drawer
+menu menu_members
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3694,6 +3714,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string members
 string mobile
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
