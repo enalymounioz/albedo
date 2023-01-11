@@ -53,7 +53,7 @@ open class BaseActivity : AppCompatActivity() {
 
     }
 
-    fun showErrorSnackbar(message: String) {
+    fun showErrorSnackBar(message: String) {
         val snackBar = Snackbar.make(
             findViewById(android.R.id.content),
             message, Snackbar.LENGTH_LONG

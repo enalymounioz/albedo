@@ -92,11 +92,11 @@ class SignInActivity : BaseActivity() {
         return when {
 
             TextUtils.isEmpty(email) -> {
-                showErrorSnackbar("Please enter an email")
+                showErrorSnackBar("Please enter an email")
                 false
             }
             TextUtils.isEmpty(password) -> {
-                showErrorSnackbar("Please enter a password")
+                showErrorSnackBar("Please enter a password")
                 false
             }
             else -> {

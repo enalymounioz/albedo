@@ -50,6 +50,11 @@
     <dimen name="create_board_btn_marginTop">30dp</dimen>
     <dimen name="create_board_content_padding">16dp</dimen>
     <dimen name="create_board_til_marginTop">25dp</dimen>
+    <dimen name="dialog_member_content_padding">10dp</dimen>
+    <dimen name="dialog_member_cv_cornerRadius">3dp</dimen>
+    <dimen name="dialog_member_cv_elevation">3dp</dimen>
+    <dimen name="dialog_member_title_padding">5dp</dimen>
+    <dimen name="dialog_member_title_text_size">18sp</dimen>
     <dimen name="et_text_size">16sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="height_of_nav_main">200dp</dimen>
@@ -90,6 +95,13 @@
     <dimen name="lets_get_started_text_marginTop">25dp</dimen>
     <dimen name="lets_get_started_text_size">25sp</dimen>
     <dimen name="main_screen_content_padding">16dp</dimen>
+    <dimen name="member_dialog_action_button_padding">10dp</dimen>
+    <dimen name="member_dialog_action_button_text_size">16sp</dimen>
+    <dimen name="member_dialog_action_layout_height">40dp</dimen>
+    <dimen name="member_dialog_action_layout_marginTop">10dp</dimen>
+    <dimen name="member_dialog_divider_height">1dp</dimen>
+    <dimen name="member_dialog_divider_marginTopBottom">3dp</dimen>
+    <dimen name="member_dialog_til_email_marginTop">10dp</dimen>
     <dimen name="members_content_padding">16dp</dimen>
     <dimen name="members_cv_marginTop">5dp</dimen>
     <dimen name="my_profile_btn_update_marginTop">30dp</dimen>
@@ -130,9 +142,12 @@
     <dimen name="toolbar_title_text_size">18sp</dimen>
     <string name="action_add_card">Add Card</string>
     <string name="action_add_list">Add List</string>
+    <string name="add">ADD</string>
     <string name="add_list">Add List</string>
+    <string name="add_member">Add Member</string>
     <string name="app_name">Albedo</string>
     <string name="board_name">Board Name</string>
+    <string name="cancel">CANCEL</string>
     <string name="create">CREATE</string>
     <string name="create_board_title">Create Board</string>
     <string name="default_web_client_id" translatable="false">686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com</string>
@@ -160,6 +175,7 @@
     <string name="pleace_click_back_again_to_exit">Please click back again to exit</string>
     <string name="please_wait">Please wait</string>
     <string name="project_id" translatable="false">albedo-c73d6</string>
+    <string name="search_member">Search Member</string>
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>

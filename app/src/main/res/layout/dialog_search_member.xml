@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--TODO (Step 4: Design an view for dialog to search a member.)-->
-<!--START-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -84,4 +82,3 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>
-    <!--END-->

@@ -2047,6 +2047,11 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dialog_member_content_padding
+dimen dialog_member_cv_cornerRadius
+dimen dialog_member_cv_elevation
+dimen dialog_member_title_padding
+dimen dialog_member_title_text_size
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen et_text_size
@@ -2346,6 +2351,13 @@ dimen material_time_input_padding_bottom
 dimen material_time_picker_minimum_screen_height
 dimen material_time_picker_minimum_screen_width
 dimen material_timepicker_dialog_buttons_margin_top
+dimen member_dialog_action_button_padding
+dimen member_dialog_action_button_text_size
+dimen member_dialog_action_layout_height
+dimen member_dialog_action_layout_marginTop
+dimen member_dialog_divider_height
+dimen member_dialog_divider_marginTopBottom
+dimen member_dialog_til_email_marginTop
 dimen members_content_padding
 dimen members_cv_marginTop
 dimen mtrl_alert_dialog_background_inset_bottom
@@ -2813,6 +2825,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable organizer_logo
 drawable shape_button_rounded
+drawable shape_dialog_rounded
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2869,6 +2882,7 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_add_member
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3018,6 +3032,7 @@ id et_board_name
 id et_card_name
 id et_edit_task_list_name
 id et_email
+id et_email_search_member
 id et_email_sign_in
 id et_mobile
 id et_name
@@ -3332,10 +3347,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvDialogTitle
+id tv_add
 id tv_add_card
 id tv_add_task_list
 id tv_app_name
 id tv_app_name_intro
+id tv_cancel
 id tv_card_name
 id tv_created_by
 id tv_member_email
@@ -3526,6 +3544,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_progress
+layout dialog_search_member
 layout item_board
 layout item_card
 layout item_member
@@ -3590,6 +3609,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu activity_main_drawer
+menu menu_add_member
 menu menu_members
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -3624,7 +3644,9 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_add_card
 string action_add_list
+string add
 string add_list
+string add_member
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3635,6 +3657,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string cancel
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3788,6 +3811,7 @@ string path_password_strike_through
 string pleace_click_back_again_to_exit
 string please_wait
 string project_id
+string search_member
 string search_menu_title
 string sign_in
 string sign_up
