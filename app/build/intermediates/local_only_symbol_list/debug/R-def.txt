@@ -31,6 +31,14 @@ dimen board_image_size
 dimen btn_marginStartEnd
 dimen btn_paddingTopBottom
 dimen btn_text_size
+dimen card_details_content_padding
+dimen card_details_cv_card_name_marginBottom
+dimen card_details_cv_content_padding
+dimen card_details_label_text_size
+dimen card_details_members_label_marginTop
+dimen card_details_update_btn_marginTop
+dimen card_details_value_marginTop
+dimen card_details_value_padding
 dimen card_view_corner_radius
 dimen card_view_elevation
 dimen card_view_layout_content_padding
@@ -157,6 +165,7 @@ id btn_sign_in_intro
 id btn_sign_up
 id btn_sign_up_intro
 id btn_update
+id btn_update_card_details
 id cv_add_card
 id cv_add_task_list_name
 id cv_edit_task_list_name
@@ -169,6 +178,7 @@ id et_email_search_member
 id et_email_sign_in
 id et_mobile
 id et_name
+id et_name_card_details
 id et_password
 id et_password_sign_in
 id et_task_list_name
@@ -194,6 +204,7 @@ id rv_boards_list
 id rv_card_list
 id rv_members_list
 id rv_task_list
+id toolbar_card_details_activity
 id toolbar_create_board_activity
 id toolbar_main_activity
 id toolbar_members_activity
@@ -216,11 +227,15 @@ id tv_members_name
 id tv_name
 id tv_no_boards_available
 id tv_progress_text
+id tv_select_due_date
+id tv_select_label_color
+id tv_select_members
 id tv_task_list_title
 id tv_title
 id tv_username
 id view_label_color
 layout activity_base
+layout activity_card_details
 layout activity_create_board
 layout activity_intro
 layout activity_main
@@ -255,6 +270,7 @@ string cancel
 string create
 string create_board_title
 string default_web_client_id
+string due_date
 string email
 string gcm_defaultSenderId
 string google_api_key
@@ -265,6 +281,7 @@ string hint_card_name
 string hint_list_name
 string image_contentDescription
 string intro_text_description
+string label_color
 string let_s_get_started_text
 string members
 string mobile
@@ -280,6 +297,9 @@ string pleace_click_back_again_to_exit
 string please_wait
 string project_id
 string search_member
+string select_color
+string select_due_date
+string select_members
 string sign_in
 string sign_up
 string sign_up_description_text

@@ -9,7 +9,6 @@ import com.enalymounioz.albedo.R
 import com.enalymounioz.albedo.models.Card
 import kotlinx.android.synthetic.main.item_card.view.*
 
-// START
 open class CardListItemsAdapter(
     private val context: Context,
     private var list: ArrayList<Card>
@@ -50,6 +49,12 @@ open class CardListItemsAdapter(
         if (holder is MyViewHolder) {
 
             holder.itemView.tv_card_name.text = model.name
+
+            holder.itemView.setOnClickListener{
+                if (onClickListener != null) {
+                    onClickListener!!.onClick(position)
+                }
+            }
         }
     }
 
@@ -71,7 +76,7 @@ open class CardListItemsAdapter(
      * An interface for onclick items.
      */
     interface OnClickListener {
-        fun onClick(position: Int, card: Card)
+        fun onClick(cardPosition: Int)
     }
 
     /**
@@ -79,4 +84,3 @@ open class CardListItemsAdapter(
      */
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 }
-// END

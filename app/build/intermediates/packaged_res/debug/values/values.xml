@@ -44,6 +44,14 @@
     <dimen name="btn_marginStartEnd">20dp</dimen>
     <dimen name="btn_paddingTopBottom">8dp</dimen>
     <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="card_details_content_padding">16dp</dimen>
+    <dimen name="card_details_cv_card_name_marginBottom">10dp</dimen>
+    <dimen name="card_details_cv_content_padding">16dp</dimen>
+    <dimen name="card_details_label_text_size">14sp</dimen>
+    <dimen name="card_details_members_label_marginTop">15dp</dimen>
+    <dimen name="card_details_update_btn_marginTop">30dp</dimen>
+    <dimen name="card_details_value_marginTop">5dp</dimen>
+    <dimen name="card_details_value_padding">10dp</dimen>
     <dimen name="card_view_corner_radius">10dp</dimen>
     <dimen name="card_view_elevation">10dp</dimen>
     <dimen name="card_view_layout_content_padding">16dp</dimen>
@@ -151,6 +159,7 @@
     <string name="create">CREATE</string>
     <string name="create_board_title">Create Board</string>
     <string name="default_web_client_id" translatable="false">686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com</string>
+    <string name="due_date">Due Date</string>
     <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">686691612168</string>
     <string name="google_api_key" translatable="false">AIzaSyBBANXaXT64mCns-Ixu4kkHkO9ioyMwB-U</string>
@@ -161,6 +170,7 @@
     <string name="hint_list_name">List Name</string>
     <string name="image_contentDescription">image</string>
     <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on Projemanag’s Minimalist Interface.</string>
+    <string name="label_color">Label Color</string>
     <string name="let_s_get_started_text">Let\'s Get started</string>
     <string name="members">Members</string>
     <string name="mobile">Mobile</string>
@@ -176,6 +186,9 @@
     <string name="please_wait">Please wait</string>
     <string name="project_id" translatable="false">albedo-c73d6</string>
     <string name="search_member">Search Member</string>
+    <string name="select_color">Select Color</string>
+    <string name="select_due_date">Select Due Date</string>
+    <string name="select_members">Select Members</string>
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>

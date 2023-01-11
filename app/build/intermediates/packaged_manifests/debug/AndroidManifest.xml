@@ -25,6 +25,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.Albedo" >
         <activity
+            android:name="com.enalymounioz.albedo.activities.CardDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Albedo.NoActionBar" />
+        <activity
             android:name="com.enalymounioz.albedo.activities.MembersActivity"
             android:exported="false"
             android:screenOrientation="portrait"

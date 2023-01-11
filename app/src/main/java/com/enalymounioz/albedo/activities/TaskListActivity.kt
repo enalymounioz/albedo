@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_task_list.*
 class TaskListActivity : BaseActivity() {
 
     private lateinit var mBoardDetails: Board
-    private lateinit var mBoardDocumentID : String
+    private lateinit var mBoardDocumentID: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,12 +51,20 @@ class TaskListActivity : BaseActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE){
+        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE) {
             showProgressDialog(resources.getString(R.string.please_wait))
             FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDocumentID)
-        }else{
+        } else {
             Log.e("Cancelled", "Cancelled")
         }
+    }
+
+    fun cardDetails(taskListPosition : Int, cardPosition: Int){
+        val intent = Intent(this, CardDetailsActivity::class.java)
+        intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
+        intent.putExtra(Constants.TASK_LIST_ITEM_POSITION,taskListPosition )
+        intent.putExtra(Constants.CARD_LIST_ITEM_POSITION, cardPosition)
+        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -65,9 +73,9 @@ class TaskListActivity : BaseActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
-            R.id.action_members->{
-                val intent = Intent(this, MembersActivity::class.java )
+        when (item.itemId) {
+            R.id.action_members -> {
+                val intent = Intent(this, MembersActivity::class.java)
                 intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
                 startActivityForResult(intent, MEMBERS_REQUEST_CODE)
                 return true
@@ -174,7 +182,7 @@ class TaskListActivity : BaseActivity() {
             cardsList
         )
 
-        mBoardDetails.taskList[position]= task
+        mBoardDetails.taskList[position] = task
 
         showProgressDialog(resources.getString(R.string.please_wait))
 
@@ -183,6 +191,6 @@ class TaskListActivity : BaseActivity() {
     }
 
     companion object {
-        const val MEMBERS_REQUEST_CODE : Int =13
+        const val MEMBERS_REQUEST_CODE: Int = 13
     }
 }
