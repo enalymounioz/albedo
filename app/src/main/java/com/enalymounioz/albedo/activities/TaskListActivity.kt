@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_task_list.*
 class TaskListActivity : BaseActivity() {
 
     private lateinit var mBoardDetails: Board
-    private lateinit var mBoardDocumentID : String
+    private lateinit var mBoardDocumentID: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,10 +51,10 @@ class TaskListActivity : BaseActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE){
+        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE || requestCode == CARD_DETAILS_REQUEST_CODE) {
             showProgressDialog(resources.getString(R.string.please_wait))
             FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDocumentID)
-        }else{
+        } else {
             Log.e("Cancelled", "Cancelled")
         }
     }
@@ -65,9 +65,9 @@ class TaskListActivity : BaseActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
-            R.id.action_members->{
-                val intent = Intent(this, MembersActivity::class.java )
+        when (item.itemId) {
+            R.id.action_members -> {
+                val intent = Intent(this, MembersActivity::class.java)
                 intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
                 startActivityForResult(intent, MEMBERS_REQUEST_CODE)
                 return true
@@ -92,6 +92,14 @@ class TaskListActivity : BaseActivity() {
         }
 
         toolbar_task_list_activity.setNavigationOnClickListener { onBackPressed() }
+    }
+
+    fun cardDetails(taskListPosition: Int, cardPosition: Int) {
+        val intent = Intent(this, CardDetailsActivity::class.java)
+        intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
+        intent.putExtra(Constants.TASK_LIST_ITEM_POSITION, taskListPosition)
+        intent.putExtra(Constants.CARD_LIST_ITEM_POSITION, cardPosition)
+        startActivityForResult(intent, CARD_DETAILS_REQUEST_CODE)
     }
 
     /**
@@ -127,14 +135,6 @@ class TaskListActivity : BaseActivity() {
         FirestoreClass().addUpdateTaskList(this@TaskListActivity, mBoardDetails)
     }
 
-    fun addUpdateTaskListSuccess() {
-
-        hideProgressDialog()
-
-        showProgressDialog(resources.getString(R.string.please_wait))
-        FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDetails.documentId)
-    }
-
     fun updateTaskList(position: Int, listName: String, model: Task) {
         val task = Task(listName, model.createdBy)
         mBoardDetails.taskList[position] = task
@@ -156,6 +156,19 @@ class TaskListActivity : BaseActivity() {
 
     }
 
+    /**
+     * A function to get the result of add or updating the task list.
+     */
+    fun addUpdateTaskListSuccess() {
+
+        hideProgressDialog()
+
+        // Here get the updated board details.
+        // Show the progress dialog.
+        showProgressDialog(resources.getString(R.string.please_wait))
+        FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDetails.documentId)
+    }
+
     fun addCardToTaskList(position: Int, cardName: String) {
         mBoardDetails.taskList.removeAt(mBoardDetails.taskList.size - 1)
 
@@ -174,15 +187,17 @@ class TaskListActivity : BaseActivity() {
             cardsList
         )
 
-        mBoardDetails.taskList[position]= task
+        mBoardDetails.taskList[position] = task
 
         showProgressDialog(resources.getString(R.string.please_wait))
+
 
         FirestoreClass().addUpdateTaskList(this@TaskListActivity, mBoardDetails)
 
     }
 
     companion object {
-        const val MEMBERS_REQUEST_CODE : Int =13
+        const val MEMBERS_REQUEST_CODE: Int = 13
+        const val CARD_DETAILS_REQUEST_CODE: Int = 14
     }
 }

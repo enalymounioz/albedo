@@ -8,10 +8,6 @@
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.enalymounioz.albedo.app-merged_res-37:/layout_activity_members.xml.flat",
-        "source": "com.enalymounioz.albedo.app-main-39:/layout/activity_members.xml"
-    },
-    {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_sign_in.xml.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\activity_sign_in.xml"
     },
@@ -42,6 +38,10 @@
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_base.xml.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "com.enalymounioz.albedo.app-merged_res-37:/drawable_ic_vector_delete_24dp.xml.flat",
+        "source": "com.enalymounioz.albedo.app-main-39:/drawable/ic_vector_delete_24dp.xml"
     },
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_edit.png.flat",
@@ -82,6 +82,10 @@
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_organizer_logo.gif.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\organizer_logo.gif"
+    },
+    {
+        "merged": "com.enalymounioz.albedo.app-merged_res-37:/menu_menu_delete_card.xml.flat",
+        "source": "com.enalymounioz.albedo.app-main-39:/menu/menu_delete_card.xml"
     },
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\drawable_ic_delete.png.flat",
@@ -192,6 +196,10 @@
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\nav_header_main_background.xml"
     },
     {
+        "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_card_details.xml.flat",
+        "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\activity_card_details.xml"
+    },
+    {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_content_main.xml.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\content_main.xml"
     },
@@ -204,16 +212,8 @@
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.enalymounioz.albedo.app-merged_res-37:/layout_dialog_search_member.xml.flat",
-        "source": "com.enalymounioz.albedo.app-main-39:/layout/dialog_search_member.xml"
-    },
-    {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-main-39:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.enalymounioz.albedo.app-merged_res-37:/menu_menu_add_member.xml.flat",
-        "source": "com.enalymounioz.albedo.app-main-39:/menu/menu_add_member.xml"
     },
     {
         "merged": "C:\\Users\\evoreopoulou\\.gradle\\daemon\\7.4\\com.enalymounioz.albedo.app-merged_res-37:\\layout_activity_task_list.xml.flat",

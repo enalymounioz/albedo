@@ -35,6 +35,8 @@ object Constants {
     const val BOARD_DETAIL: String = "board_detail"
     const val ID: String = "id"
     const val EMAIL: String = "email"
+    const val TASK_LIST_ITEM_POSITION: String   = "taskList_item_position"
+    const val CARD_LIST_ITEM_POSITION: String = "cardList_item_position"
 
     /**
      * A function for user profile image selection from phone storage.
