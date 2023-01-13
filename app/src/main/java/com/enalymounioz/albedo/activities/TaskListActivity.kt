@@ -51,20 +51,12 @@ class TaskListActivity : BaseActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE) {
+        if (resultCode == Activity.RESULT_OK && requestCode == MEMBERS_REQUEST_CODE || requestCode == CARD_DETAILS_REQUEST_CODE) {
             showProgressDialog(resources.getString(R.string.please_wait))
             FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDocumentID)
         } else {
             Log.e("Cancelled", "Cancelled")
         }
-    }
-
-    fun cardDetails(taskListPosition : Int, cardPosition: Int){
-        val intent = Intent(this, CardDetailsActivity::class.java)
-        intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
-        intent.putExtra(Constants.TASK_LIST_ITEM_POSITION,taskListPosition )
-        intent.putExtra(Constants.CARD_LIST_ITEM_POSITION, cardPosition)
-        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -102,6 +94,14 @@ class TaskListActivity : BaseActivity() {
         toolbar_task_list_activity.setNavigationOnClickListener { onBackPressed() }
     }
 
+    fun cardDetails(taskListPosition: Int, cardPosition: Int) {
+        val intent = Intent(this, CardDetailsActivity::class.java)
+        intent.putExtra(Constants.BOARD_DETAIL, mBoardDetails)
+        intent.putExtra(Constants.TASK_LIST_ITEM_POSITION, taskListPosition)
+        intent.putExtra(Constants.CARD_LIST_ITEM_POSITION, cardPosition)
+        startActivityForResult(intent, CARD_DETAILS_REQUEST_CODE)
+    }
+
     /**
      * A function to get the result of Board Detail.
      */
@@ -135,14 +135,6 @@ class TaskListActivity : BaseActivity() {
         FirestoreClass().addUpdateTaskList(this@TaskListActivity, mBoardDetails)
     }
 
-    fun addUpdateTaskListSuccess() {
-
-        hideProgressDialog()
-
-        showProgressDialog(resources.getString(R.string.please_wait))
-        FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDetails.documentId)
-    }
-
     fun updateTaskList(position: Int, listName: String, model: Task) {
         val task = Task(listName, model.createdBy)
         mBoardDetails.taskList[position] = task
@@ -162,6 +154,19 @@ class TaskListActivity : BaseActivity() {
 
         FirestoreClass().addUpdateTaskList(this@TaskListActivity, mBoardDetails)
 
+    }
+
+    /**
+     * A function to get the result of add or updating the task list.
+     */
+    fun addUpdateTaskListSuccess() {
+
+        hideProgressDialog()
+
+        // Here get the updated board details.
+        // Show the progress dialog.
+        showProgressDialog(resources.getString(R.string.please_wait))
+        FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDetails.documentId)
     }
 
     fun addCardToTaskList(position: Int, cardName: String) {
@@ -186,11 +191,13 @@ class TaskListActivity : BaseActivity() {
 
         showProgressDialog(resources.getString(R.string.please_wait))
 
+
         FirestoreClass().addUpdateTaskList(this@TaskListActivity, mBoardDetails)
 
     }
 
     companion object {
         const val MEMBERS_REQUEST_CODE: Int = 13
+        const val CARD_DETAILS_REQUEST_CODE: Int = 14
     }
 }

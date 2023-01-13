@@ -153,12 +153,15 @@
     <string name="add">ADD</string>
     <string name="add_list">Add List</string>
     <string name="add_member">Add Member</string>
+    <string name="alert">Alert</string>
     <string name="app_name">Albedo</string>
     <string name="board_name">Board Name</string>
     <string name="cancel">CANCEL</string>
+    <string name="confirmation_message_to_delete_card">Are you sure you want to delete card \'%1$s\'?</string>
     <string name="create">CREATE</string>
     <string name="create_board_title">Create Board</string>
     <string name="default_web_client_id" translatable="false">686691612168-8ulksj8emniagmne3d5p6munetsv6670.apps.googleusercontent.com</string>
+    <string name="delete_card">Delete Card</string>
     <string name="due_date">Due Date</string>
     <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">686691612168</string>
@@ -179,6 +182,7 @@
     <string name="name">Name</string>
     <string name="nav_my_profile">My Profile</string>
     <string name="nav_sign_out">Sign Out</string>
+    <string name="no">No</string>
     <string name="no_boards_are_available">No Boards are available!!!</string>
     <string name="now_we_can_register_user">Now we can register a new user</string>
     <string name="password">Password</string>
@@ -193,6 +197,7 @@
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
     <string name="update">Update</string>
+    <string name="yes">Yes</string>
     <style name="Theme.Albedo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

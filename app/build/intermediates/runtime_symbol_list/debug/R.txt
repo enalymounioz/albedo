@@ -2759,6 +2759,7 @@ int drawable ic_nav_sign_out 0x7f0800a9
 int drawable ic_nav_user 0x7f0800aa
 int drawable ic_user_place_holder 0x7f0800ab
 int drawable ic_vector_add_24dp 0x7f0800ac
+int drawable ic_vector_delete_24dp 0x7f0800fb
 int drawable ic_white_color_back_24dp 0x7f0800ad
 int drawable intro_background 0x7f0800ae
 int drawable m3_appbar_background 0x7f0800af
@@ -2899,6 +2900,7 @@ int id action_bar_subtitle 0x7f0a0039
 int id action_bar_title 0x7f0a003a
 int id action_container 0x7f0a003b
 int id action_context_bar 0x7f0a003c
+int id action_delete_card 0x7f0a0235
 int id action_divider 0x7f0a003d
 int id action_image 0x7f0a003e
 int id action_members 0x7f0a003f
@@ -3624,6 +3626,7 @@ int layout select_dialog_singlechoice_material 0x7f0d007a
 int layout support_simple_spinner_dropdown_item 0x7f0d007b
 int menu activity_main_drawer 0x7f0f0000
 int menu menu_add_member 0x7f0f0001
+int menu menu_delete_card 0x7f0f0003
 int menu menu_members 0x7f0f0002
 int mipmap ic_launcher 0x7f100000
 int mipmap ic_launcher_round 0x7f100001
@@ -3661,6 +3664,7 @@ int string action_add_list 0x7f13001c
 int string add 0x7f13001d
 int string add_list 0x7f13001e
 int string add_member 0x7f13001f
+int string alert 0x7f1300d1
 int string androidx_startup 0x7f130020
 int string app_name 0x7f130021
 int string appbar_scrolling_view_behavior 0x7f130022
@@ -3694,10 +3698,12 @@ int string common_google_play_services_wear_update_text 0x7f13003d
 int string common_open_on_phone 0x7f13003e
 int string common_signin_button_text 0x7f13003f
 int string common_signin_button_text_long 0x7f130040
+int string confirmation_message_to_delete_card 0x7f1300d2
 int string copy_toast_msg 0x7f130041
 int string create 0x7f130042
 int string create_board_title 0x7f130043
 int string default_web_client_id 0x7f130044
+int string delete_card 0x7f1300d0
 int string due_date 0x7f130045
 int string email 0x7f130046
 int string error_a11y_label 0x7f130047
@@ -3816,6 +3822,7 @@ int string my_profile_title 0x7f1300b7
 int string name 0x7f1300b8
 int string nav_my_profile 0x7f1300b9
 int string nav_sign_out 0x7f1300ba
+int string no 0x7f1300d3
 int string no_boards_are_available 0x7f1300bb
 int string now_we_can_register_user 0x7f1300bc
 int string password 0x7f1300bd
@@ -3837,6 +3844,7 @@ int string sign_up 0x7f1300cc
 int string sign_up_description_text 0x7f1300cd
 int string status_bar_notification_info_overflow 0x7f1300ce
 int string update 0x7f1300cf
+int string yes 0x7f1300d4
 int style AlertDialog_AppCompat 0x7f140000
 int style AlertDialog_AppCompat_Light 0x7f140001
 int style Animation_AppCompat_Dialog 0x7f140002

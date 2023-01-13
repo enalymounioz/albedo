@@ -149,6 +149,7 @@ drawable ic_nav_sign_out
 drawable ic_nav_user
 drawable ic_user_place_holder
 drawable ic_vector_add_24dp
+drawable ic_vector_delete_24dp
 drawable ic_white_color_back_24dp
 drawable intro_background
 drawable nav_header_main_background
@@ -158,6 +159,7 @@ drawable shape_dialog_rounded
 drawable white_border_shape_button_rounded
 font nunito
 id action_add_member
+id action_delete_card
 id action_members
 id btn_create
 id btn_sign_in
@@ -256,6 +258,7 @@ layout item_task
 layout nav_header_main
 menu activity_main_drawer
 menu menu_add_member
+menu menu_delete_card
 menu menu_members
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -264,12 +267,15 @@ string action_add_list
 string add
 string add_list
 string add_member
+string alert
 string app_name
 string board_name
 string cancel
+string confirmation_message_to_delete_card
 string create
 string create_board_title
 string default_web_client_id
+string delete_card
 string due_date
 string email
 string gcm_defaultSenderId
@@ -290,6 +296,7 @@ string my_profile_title
 string name
 string nav_my_profile
 string nav_sign_out
+string no
 string no_boards_are_available
 string now_we_can_register_user
 string password
@@ -304,6 +311,7 @@ string sign_in
 string sign_up
 string sign_up_description_text
 string update
+string yes
 style Theme.Albedo
 style Theme.Albedo.AppBarOverlay
 style Theme.Albedo.NoActionBar
