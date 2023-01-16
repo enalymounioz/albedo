@@ -12,7 +12,8 @@ import kotlinx.android.synthetic.main.item_card_selected_member.view.*
 
 open class CardMemberListItemsAdapter(
     private val context: Context,
-    private var list: ArrayList<SelectedMembers>
+    private var list: ArrayList<SelectedMembers>,
+    private val assignMembers: Boolean
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var onClickListener: OnClickListener? = null
@@ -48,7 +49,7 @@ open class CardMemberListItemsAdapter(
 
         if (holder is MyViewHolder) {
 
-            if (position == list.size - 1) {
+            if (position == list.size - 1 && assignMembers) {
                 holder.itemView.iv_add_member.visibility = View.VISIBLE
                 holder.itemView.iv_selected_member_image.visibility = View.GONE
             } else {
