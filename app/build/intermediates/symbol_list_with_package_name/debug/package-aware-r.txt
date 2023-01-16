@@ -2118,6 +2118,7 @@ dimen item_member_image_circular_width_size
 dimen item_member_marginBottom
 dimen item_member_member_image_size
 dimen item_member_name_text_size
+dimen item_selected_member_image_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -2747,6 +2748,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_action_navigation_menu
+drawable ic_add_member
 drawable ic_background
 drawable ic_black_color_back_24dp
 drawable ic_board_place_holder
@@ -2769,6 +2771,7 @@ drawable ic_nav_sign_out
 drawable ic_nav_user
 drawable ic_user_place_holder
 drawable ic_vector_add_24dp
+drawable ic_vector_color_accent_done_24dp
 drawable ic_vector_delete_24dp
 drawable ic_vector_white_done_24dp
 drawable ic_white_color_back_24dp
@@ -3122,10 +3125,13 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_add_member
 id iv_board_image
 id iv_member_image
 id iv_profile_user_image
 id iv_selected_color
+id iv_selected_member
+id iv_selected_member_image
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3256,7 +3262,9 @@ id row_index_key
 id rvList
 id rv_boards_list
 id rv_card_list
+id rv_card_selected_members_list
 id rv_members_list
+id rv_selected_members_list
 id rv_task_list
 id save_non_transition_alpha
 id save_overlay_view
@@ -3385,7 +3393,6 @@ id tv_card_name
 id tv_created_by
 id tv_member_email
 id tv_member_name
-id tv_members_name
 id tv_name
 id tv_no_boards_available
 id tv_progress_text
@@ -3580,6 +3587,7 @@ layout dialog_progress
 layout dialog_search_member
 layout item_board
 layout item_card
+layout item_card_selected_member
 layout item_label_color
 layout item_member
 layout item_task
@@ -3862,6 +3870,7 @@ string sign_up
 string sign_up_description_text
 string status_bar_notification_info_overflow
 string str_select_label_color
+string str_select_member
 string update
 string yes
 style AlertDialog_AppCompat

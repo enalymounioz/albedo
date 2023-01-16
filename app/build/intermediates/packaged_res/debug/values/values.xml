@@ -109,6 +109,7 @@
     <dimen name="item_member_marginBottom">10dp</dimen>
     <dimen name="item_member_member_image_size">60dp</dimen>
     <dimen name="item_member_name_text_size">18sp</dimen>
+    <dimen name="item_selected_member_image_size">45dp</dimen>
     <dimen name="lets_get_started_text_marginTop">25dp</dimen>
     <dimen name="lets_get_started_text_size">25sp</dimen>
     <dimen name="main_screen_content_padding">16dp</dimen>
@@ -206,6 +207,7 @@
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
     <string name="str_select_label_color">Select Label Color</string>
+    <string name="str_select_member">Select Member</string>
     <string name="update">Update</string>
     <string name="yes">Yes</string>
     <style name="Theme.Albedo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
