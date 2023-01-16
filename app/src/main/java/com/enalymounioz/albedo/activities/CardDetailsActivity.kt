@@ -6,14 +6,16 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.GridLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import com.enalymounioz.albedo.R
+import com.enalymounioz.albedo.adapters.CardMemberListItemsAdapter
 import com.enalymounioz.albedo.dialogs.LabelColorListDialog
+import com.enalymounioz.albedo.dialogs.MembersListDialog
 import com.enalymounioz.albedo.firebase.FirestoreClass
-import com.enalymounioz.albedo.models.Board
-import com.enalymounioz.albedo.models.Card
-import com.enalymounioz.albedo.models.Task
-import com.enalymounioz.albedo.models.User
+import com.enalymounioz.albedo.models.*
 import com.enalymounioz.albedo.utils.Constants
 import kotlinx.android.synthetic.main.activity_card_details.*
 
@@ -26,13 +28,11 @@ class CardDetailsActivity : BaseActivity() {
     private var mTaskListPosition: Int = -1
     // A global variable for card item position
     private var mCardPosition: Int = -1
-    // TODO (Step 9: Add a global variable for selected label color)
-    // START
     // A global variable for selected label color
     private var mSelectedColor: String = ""
 
+    // A global variable for Assigned Members List.
     private lateinit var mMembersDetailList: ArrayList<User>
-    // END
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,20 +42,26 @@ class CardDetailsActivity : BaseActivity() {
 
         setupActionBar()
 
-        et_name_card_details.setText(mBoardDetails
-            .taskList[mTaskListPosition]
-            .cards[mCardPosition].name)
+        et_name_card_details.setText(mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].name)
         et_name_card_details.setSelection(et_name_card_details.text.toString().length) // The cursor after the string length
 
-        mSelectedColor= mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].labelColor
-            if(mSelectedColor.isNotEmpty()){
-                setColor()
-            }
-        // START
+        mSelectedColor = mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].labelColor
+        if (mSelectedColor.isNotEmpty()) {
+            setColor()
+        }
+
         tv_select_label_color.setOnClickListener {
             labelColorsListDialog()
         }
+
+        // TODO (Step 4: Call the function to setup the recyclerView for assigned members.)
+        // START
+        setupSelectedMembersList()
         // END
+
+        tv_select_members.setOnClickListener {
+            membersListDialog()
+        }
 
         btn_update_card_details.setOnClickListener {
             if (et_name_card_details.text.toString().isNotEmpty()) {
@@ -111,13 +117,12 @@ class CardDetailsActivity : BaseActivity() {
             mCardPosition = intent.getIntExtra(Constants.CARD_LIST_ITEM_POSITION, -1)
         }
         if (intent.hasExtra(Constants.BOARD_DETAIL)) {
-            mBoardDetails = intent.getParcelableExtra(Constants.BOARD_DETAIL)!!
-       }
-        if (intent.hasExtra(Constants.BOARD_MEMBERS_LIST)) {
-            mMembersDetailList = intent.getParcelableArrayListExtra(
-                Constants.BOARD_MEMBERS_LIST)!!
+            mBoardDetails = intent.getParcelableExtra<Board>(Constants.BOARD_DETAIL)!! as Board
         }
 
+        if (intent.hasExtra(Constants.BOARD_MEMBERS_LIST)) {
+            mMembersDetailList = intent.getParcelableArrayListExtra(Constants.BOARD_MEMBERS_LIST)!!
+        }
     }
 
     /**
@@ -136,8 +141,6 @@ class CardDetailsActivity : BaseActivity() {
      */
     private fun updateCardDetails() {
 
-        // TODO (Step 13: Pass the selected label color of the card in the data model class.)
-        // START
         // Here we have updated the card name using the data model class.
         val card = Card(
             et_name_card_details.text.toString(),
@@ -145,7 +148,9 @@ class CardDetailsActivity : BaseActivity() {
             mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo,
             mSelectedColor
         )
-        // END
+
+        val taskList: ArrayList<Task> = mBoardDetails.taskList
+        taskList.removeAt(taskList.size - 1)
 
         // Here we have assigned the update card details to the task list using the card position.
         mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition] = card
@@ -207,8 +212,6 @@ class CardDetailsActivity : BaseActivity() {
         FirestoreClass().addUpdateTaskList(this@CardDetailsActivity, mBoardDetails)
     }
 
-    // TODO (Step 7: Create a function to remove the text and set the label color to the TextView.)
-    // START
     /**
      * A function to remove the text and set the label color to the TextView.
      */
@@ -216,10 +219,7 @@ class CardDetailsActivity : BaseActivity() {
         tv_select_label_color.text = ""
         tv_select_label_color.setBackgroundColor(Color.parseColor(mSelectedColor))
     }
-    // END
 
-    // TODO (Step 6: Create a function to add some static label colors in the list.)
-    // START
     /**
      * A function to add some static label colors in the list.
      */
@@ -236,10 +236,7 @@ class CardDetailsActivity : BaseActivity() {
 
         return colorsList
     }
-    // END
 
-    // TODO (Step 10: Create a function to launch the label color list dialog.)
-    // START
     /**
      * A function to launch the label color list dialog.
      */
@@ -260,5 +257,117 @@ class CardDetailsActivity : BaseActivity() {
         }
         listDialog.show()
     }
-    // END
+
+    /**
+     * A function to launch and setup assigned members detail list into recyclerview.
+     */
+    private fun membersListDialog() {
+
+        // Here we get the updated assigned members list
+        val cardAssignedMembersList =
+            mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo
+
+        if (cardAssignedMembersList.size > 0) {
+            // Here we got the details of assigned members list from the global members list which is passed from the Task List screen.
+            for (i in mMembersDetailList.indices) {
+                for (j in cardAssignedMembersList) {
+                    if (mMembersDetailList[i].id == j) {
+                        mMembersDetailList[i].selected = true
+                    }
+                }
+            }
+        } else {
+            for (i in mMembersDetailList.indices) {
+                mMembersDetailList[i].selected = false
+            }
+        }
+
+        val listDialog = object : MembersListDialog(
+            this@CardDetailsActivity,
+            mMembersDetailList,
+            resources.getString(R.string.str_select_member)
+        ) {
+            override fun onItemSelected(user: User, action: String) {
+
+                // TODO (Step 5: Here based on the action in the members list dialog update the list.)
+                // START
+                if (action == Constants.SELECT) {
+                    if (!mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo.contains(
+                            user.id
+                        )
+                    ) {
+                        mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo.add(
+                            user.id
+                        )
+                    }
+                } else {
+                    mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo.remove(
+                        user.id
+                    )
+
+                    for (i in mMembersDetailList.indices) {
+                        if (mMembersDetailList[i].id == user.id) {
+                            mMembersDetailList[i].selected = false
+                        }
+                    }
+                }
+
+                setupSelectedMembersList()
+                // END
+            }
+        }
+        listDialog.show()
+    }
+
+// TODO (Step 3: Create a function to setup the recyclerView for card assigned members.)
+// START
+    /**
+     * A function to setup the recyclerView for card assigned members.
+     */
+    private fun setupSelectedMembersList() {
+
+        // Assigned members of the Card.
+        val cardAssignedMembersList =
+            mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo
+
+        // A instance of selected members list.
+        val selectedMembersList: ArrayList<SelectedMembers> = ArrayList()
+
+        // Here we got the detail list of members and add it to the selected members list as required.
+        for (i in mMembersDetailList.indices) {
+            for (j in cardAssignedMembersList) {
+                if (mMembersDetailList[i].id == j) {
+                    val selectedMember = SelectedMembers(
+                        mMembersDetailList[i].id,
+                        mMembersDetailList[i].image
+                    )
+
+                    selectedMembersList.add(selectedMember)
+                }
+            }
+        }
+
+        if (selectedMembersList.size > 0) {
+
+            // This is for the last item to show.
+            selectedMembersList.add(SelectedMembers("", ""))
+
+            tv_select_members.visibility = View.GONE
+            rv_selected_members_list.visibility = View.VISIBLE
+
+            rv_selected_members_list.layoutManager = GridLayoutManager(this@CardDetailsActivity, 6)
+            val adapter = CardMemberListItemsAdapter(this@CardDetailsActivity, selectedMembersList)
+            rv_selected_members_list.adapter = adapter
+            adapter.setOnClickListener(object :
+                CardMemberListItemsAdapter.OnClickListener {
+                override fun onClick() {
+                    membersListDialog()
+                }
+            })
+        } else {
+            tv_select_members.visibility = View.VISIBLE
+            rv_selected_members_list.visibility = View.GONE
+        }
+    }
+// END
 }
