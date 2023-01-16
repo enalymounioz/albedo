@@ -58,6 +58,12 @@
     <dimen name="create_board_btn_marginTop">30dp</dimen>
     <dimen name="create_board_content_padding">16dp</dimen>
     <dimen name="create_board_til_marginTop">25dp</dimen>
+    <dimen name="dialog_list_content_padding">10dp</dimen>
+    <dimen name="dialog_list_cv_elevation_and_corner_radius">3dp</dimen>
+    <dimen name="dialog_list_divider_height">1dp</dimen>
+    <dimen name="dialog_list_marginTopBottom">3dp</dimen>
+    <dimen name="dialog_list_title_padding">5dp</dimen>
+    <dimen name="dialog_list_title_text_size">18sp</dimen>
     <dimen name="dialog_member_content_padding">10dp</dimen>
     <dimen name="dialog_member_cv_cornerRadius">3dp</dimen>
     <dimen name="dialog_member_cv_elevation">3dp</dimen>
@@ -91,6 +97,9 @@
     <dimen name="item_card_members_text_size">14sp</dimen>
     <dimen name="item_card_name_text_padding">10dp</dimen>
     <dimen name="item_card_name_text_size">16sp</dimen>
+    <dimen name="item_label_color_height">40dp</dimen>
+    <dimen name="item_label_color_margin">5dp</dimen>
+    <dimen name="item_label_color_selected_image_marginEnd">10dp</dimen>
     <dimen name="item_member_content_padding">10dp</dimen>
     <dimen name="item_member_detail_layout_marginStart">10dp</dimen>
     <dimen name="item_member_divider_height">0.3dp</dimen>
@@ -196,6 +205,7 @@
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="str_select_label_color">Select Label Color</string>
     <string name="update">Update</string>
     <string name="yes">Yes</string>
     <style name="Theme.Albedo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

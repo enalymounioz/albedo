@@ -19,24 +19,22 @@ object Constants {
     const val IMAGE: String = "image"
     const val NAME: String = "name"
     const val MOBILE: String = "mobile"
-    // TODO (Step 3: Add a field name as assignedTo which we are gonna use later on.)
-    // START
     const val ASSIGNED_TO: String = "assignedTo"
-    // END
+    const val DOCUMENT_ID: String = "documentId"
+    const val TASK_LIST: String = "taskList"
+    const val ID: String = "id"
+    const val EMAIL: String = "email"
+    const val BOARD_MEMBERS_LIST: String = "boardMembers"
+
+    const val BOARD_DETAIL: String = "board_detail"
+
+    const val TASK_LIST_ITEM_POSITION: String = "task_list_item_position"
+    const val CARD_LIST_ITEM_POSITION: String = "card_list_item_position"
 
     //A unique code for asking the Read Storage Permission using this we will be check and identify in the method onRequestPermissionsResult
     const val READ_STORAGE_PERMISSION_CODE = 1
     // A unique code of image selection from Phone Storage.
     const val PICK_IMAGE_REQUEST_CODE = 2
-
-    const val DOCUMENT_ID: String = "documentId"
-
-    const val TASK_LIST: String = "taskList"
-    const val BOARD_DETAIL: String = "board_detail"
-    const val ID: String = "id"
-    const val EMAIL: String = "email"
-    const val TASK_LIST_ITEM_POSITION: String   = "taskList_item_position"
-    const val CARD_LIST_ITEM_POSITION: String = "cardList_item_position"
 
     /**
      * A function for user profile image selection from phone storage.

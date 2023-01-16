@@ -2055,6 +2055,12 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dialog_list_content_padding
+dimen dialog_list_cv_elevation_and_corner_radius
+dimen dialog_list_divider_height
+dimen dialog_list_marginTopBottom
+dimen dialog_list_title_padding
+dimen dialog_list_title_text_size
 dimen dialog_member_content_padding
 dimen dialog_member_cv_cornerRadius
 dimen dialog_member_cv_elevation
@@ -2100,6 +2106,9 @@ dimen item_card_members_text_padding
 dimen item_card_members_text_size
 dimen item_card_name_text_padding
 dimen item_card_name_text_size
+dimen item_label_color_height
+dimen item_label_color_margin
+dimen item_label_color_selected_image_marginEnd
 dimen item_member_content_padding
 dimen item_member_detail_layout_marginStart
 dimen item_member_divider_height
@@ -2761,6 +2770,7 @@ drawable ic_nav_user
 drawable ic_user_place_holder
 drawable ic_vector_add_24dp
 drawable ic_vector_delete_24dp
+drawable ic_vector_white_done_24dp
 drawable ic_white_color_back_24dp
 drawable intro_background
 drawable m3_appbar_background
@@ -3066,6 +3076,7 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fl_main
 id flip
 id floating
 id forever
@@ -3114,6 +3125,7 @@ id item_touch_helper_previous_elevation
 id iv_board_image
 id iv_member_image
 id iv_profile_user_image
+id iv_selected_color
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3241,6 +3253,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvList
 id rv_boards_list
 id rv_card_list
 id rv_members_list
@@ -3361,6 +3374,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvDialogTitle
+id tvTitle
 id tv_add
 id tv_add_card
 id tv_add_task_list
@@ -3388,6 +3402,7 @@ id up
 id useLogo
 id vertical_only
 id view_label_color
+id view_main
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3560,10 +3575,12 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_list
 layout dialog_progress
 layout dialog_search_member
 layout item_board
 layout item_card
+layout item_label_color
 layout item_member
 layout item_task
 layout m3_alert_dialog
@@ -3844,6 +3861,7 @@ string sign_in
 string sign_up
 string sign_up_description_text
 string status_bar_notification_info_overflow
+string str_select_label_color
 string update
 string yes
 style AlertDialog_AppCompat
