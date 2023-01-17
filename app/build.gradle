@@ -44,15 +44,21 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
 
     implementation 'com.google.gms:google-services:4.3.14'
+    // Firebase Authentication Dependency
     implementation 'com.google.firebase:firebase-auth:21.1.0'
+    // Firebase Cloud Firestore Dependency
     implementation 'com.google.firebase:firebase-firestore-ktx:24.4.1'
+    // circular image view dependency
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // Firebase Storage Dependency
     implementation 'com.google.firebase:firebase-storage-ktx:20.1.0'
+    // Firebase Messaging Dependency
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-
+    // Image loading library
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 }

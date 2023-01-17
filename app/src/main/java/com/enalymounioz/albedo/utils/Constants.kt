@@ -8,6 +8,8 @@ import android.webkit.MimeTypeMap
 
 object Constants {
 
+
+
     // Firebase Constants
     // This  is used for the collection name for USERS.
     const val USERS: String = "users"
@@ -25,19 +27,28 @@ object Constants {
     const val ID: String = "id"
     const val EMAIL: String = "email"
     const val BOARD_MEMBERS_LIST: String = "boardMembers"
-
     const val BOARD_DETAIL: String = "board_detail"
-
     const val TASK_LIST_ITEM_POSITION: String = "task_list_item_position"
     const val CARD_LIST_ITEM_POSITION: String = "card_list_item_position"
-
     const val SELECT: String = "Select"
     const val UN_SELECT: String = "UnSelect"
+    const val ALBEDO_PREFERENCES = "AlbedoPrefs"
+    const val FCM_TOKEN_UPDATED = "fcmTokenUpdated"
+    const val FCM_TOKEN = "fcmToken"
 
     //A unique code for asking the Read Storage Permission using this we will be check and identify in the method onRequestPermissionsResult
     const val READ_STORAGE_PERMISSION_CODE = 1
     // A unique code of image selection from Phone Storage.
     const val PICK_IMAGE_REQUEST_CODE = 2
+
+    const val FCM_BASE_URL:String = "https://fcm.googleapis.com/fcm/send"
+    const val FCM_AUTHORIZATION:String = "authorization"
+    const val FCM_KEY:String = "key"
+    const val FCM_SERVER_KEY:String = "BJbQG1V4EN55Q215yZKsAni7A_zHrLluKAg5JJS-u5BB_Kk4mN4mUTI8hvjTQqeoS4psDFSNEOLdnsERUeKooP8"
+    const val FCM_KEY_TITLE:String = "title"
+    const val FCM_KEY_MESSAGE:String = "message"
+    const val FCM_KEY_DATA:String = "data"
+    const val FCM_KEY_TO:String = "to"
 
     /**
      * A function for user profile image selection from phone storage.
