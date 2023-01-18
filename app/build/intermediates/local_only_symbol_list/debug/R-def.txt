@@ -158,6 +158,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_nav_sign_out
 drawable ic_nav_user
+drawable ic_stat_ic_notification
 drawable ic_user_place_holder
 drawable ic_vector_add_24dp
 drawable ic_vector_color_accent_done_24dp
@@ -299,6 +300,7 @@ string cancel
 string confirmation_message_to_delete_card
 string create
 string create_board_title
+string default_notification_channel
 string default_web_client_id
 string delete_card
 string due_date
@@ -325,7 +327,7 @@ string no
 string no_boards_are_available
 string now_we_can_register_user
 string password
-string pleace_click_back_again_to_exit
+string please_click_back_again_to_exit
 string please_wait
 string project_id
 string search_member
