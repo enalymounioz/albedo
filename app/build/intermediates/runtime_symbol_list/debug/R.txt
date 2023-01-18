@@ -3859,7 +3859,7 @@ int string path_password_eye 0x7f1300c5
 int string path_password_eye_mask_strike_through 0x7f1300c6
 int string path_password_eye_mask_visible 0x7f1300c7
 int string path_password_strike_through 0x7f1300c8
-int string pleace_click_back_again_to_exit 0x7f1300c9
+int string please_click_back_again_to_exit 0x7f1300c9
 int string please_wait 0x7f1300ca
 int string project_id 0x7f1300cb
 int string search_member 0x7f1300cc

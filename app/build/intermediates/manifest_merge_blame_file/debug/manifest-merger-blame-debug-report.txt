@@ -30,7 +30,7 @@
 16-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\evoreopoulou\.gradle\caches\transforms-3\54f0096fc1fa732f9529a365e304f549\transformed\firebase-messaging-23.1.1\AndroidManifest.xml:28:22-79
 17
 18    <application
-18-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:9:5-116:19
+18-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:9:5-115:19
 19        android:allowBackup="true"
 19-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:10:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -177,7 +177,7 @@
 97            android:theme="@style/Theme.Albedo.NoActionBar" />
 97-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:83:13-60
 98        <activity
-98-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:84:9-94:20
+98-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:84:9-93:20
 99            android:name="com.enalymounioz.albedo.activities.SplashActivity"
 99-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:85:13-54
 100            android:exported="true"
@@ -187,26 +187,26 @@
 102            android:theme="@style/Theme.Albedo.NoActionBar" >
 102-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:88:13-60
 103            <intent-filter>
-103-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:89:13-93:29
+103-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:89:13-92:29
 104                <action android:name="android.intent.action.MAIN" />
 104-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:90:17-69
 104-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:90:25-66
 105
 106                <category android:name="android.intent.category.LAUNCHER" />
-106-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:92:17-77
-106-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:92:27-74
+106-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:91:17-77
+106-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:91:27-74
 107            </intent-filter>
 108        </activity>
 109        <activity
-109-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:95:9-103:20
+109-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:94:9-102:20
 110            android:name="com.enalymounioz.albedo.activities.MainActivity"
-110-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:96:13-52
-111            android:exported="false"
-111-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:97:13-37
+110-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:95:13-52
+111            android:exported="true"
+111-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:96:13-36
 112            android:screenOrientation="portrait"
-112-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:98:13-49
+112-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:97:13-49
 113            android:theme="@style/Theme.Albedo.NoActionBar" >
-113-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:99:13-60
+113-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:98:13-60
 114            <meta-data
 114-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:60:13-62:36
 115                android:name="android.app.lib_name"
@@ -216,23 +216,23 @@
 117        </activity>
 118
 119        <meta-data
-119-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:105:9-107:57
+119-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:104:9-106:57
 120            android:name="preloaded_fonts"
-120-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:106:13-43
+120-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:105:13-43
 121            android:resource="@array/preloaded_fonts" />
-121-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:107:13-54
+121-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:106:13-54
 122
 123        <service
-123-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:109:9-115:19
+123-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:108:9-114:19
 124            android:name="com.enalymounioz.albedo.fcm.MyFirebaseMessagingService"
-124-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:110:13-59
-125            android:exported="false" >
-125-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:111:13-37
+124-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:109:13-59
+125            android:exported="true" >
+125-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:110:13-36
 126            <intent-filter>
-126-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:112:13-114:29
+126-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:111:13-113:29
 127                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-127-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:113:17-79
-127-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:113:25-77
+127-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:112:17-79
+127-->C:\Users\evoreopoulou\AndroidStudioProjects\Albedo\app\src\main\AndroidManifest.xml:112:25-77
 128            </intent-filter>
 129        </service>
 130        <service

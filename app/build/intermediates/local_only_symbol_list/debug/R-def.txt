@@ -327,7 +327,7 @@ string no
 string no_boards_are_available
 string now_we_can_register_user
 string password
-string pleace_click_back_again_to_exit
+string please_click_back_again_to_exit
 string please_wait
 string project_id
 string search_member

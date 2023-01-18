@@ -45,7 +45,7 @@ open class BaseActivity : AppCompatActivity() {
 
         this.doubleBackToExitPressedOnce = true
         Toast.makeText(
-            this, resources.getString(R.string.pleace_click_back_again_to_exit),
+            this, resources.getString(R.string.please_click_back_again_to_exit),
             Toast.LENGTH_LONG
         ).show()
 

@@ -197,7 +197,7 @@
     <string name="no_boards_are_available">No Boards are available!!!</string>
     <string name="now_we_can_register_user">Now we can register a new user</string>
     <string name="password">Password</string>
-    <string name="pleace_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
     <string name="please_wait">Please wait</string>
     <string name="project_id" translatable="false">albedo-c73d6</string>
     <string name="search_member">Search Member</string>
